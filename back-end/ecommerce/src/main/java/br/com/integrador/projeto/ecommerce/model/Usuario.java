@@ -30,7 +30,7 @@ public class Usuario {
 	
 	@NotBlank(message = "O telefone deve ser preenchido.")
 	@Size(min = 11, max = 11, message = "O telefone deve conter o DDD + os 9 números.")
-	private int telefone;
+	private String telefone;
 	
 	private String foto;
 
@@ -66,11 +66,11 @@ public class Usuario {
 		this.senha = senha;
 	}
 
-	public int getTelefone() {
+	public String getTelefone() {
 		return telefone;
 	}
 
-	public void setTelefone(int telefone) {
+	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
 

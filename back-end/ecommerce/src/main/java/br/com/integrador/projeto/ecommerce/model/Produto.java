@@ -8,7 +8,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -24,16 +26,17 @@ public class Produto {
 	@NotBlank(message = "O nome deve ser preenchido.")
 	private String nome;
 	
-	@NotBlank(message = "O preço deve ser preenchido.")
-	@Size(min = 1, max = 10)
+	@NotNull(message = "O preço deve ser preenchido.")
+	//@Size(min = 1, max = 10)
+	@Digits (integer = 4,fraction =2)
 	private BigDecimal valor;
 	
 	@NotBlank(message = "A descrição deve ser preenchida.")
 	@Size(min = 5, max = 100, message = "A descrição deve conter entre 5 e 100 caracteres.")
 	private String descricao;
 	
-	@NotBlank(message = "A quantidade deve ser preenchida.")
-	@Size(min = 1, max = 5)
+	@NotNull(message = "A quantidade deve ser preenchida.")
+	//@Size(min = 1, max = 5)
 	private int quantidade;
 	
 	@NotBlank(message = "A foto deve ser preenchida.")
@@ -44,9 +47,9 @@ public class Produto {
 	@JsonIgnoreProperties("produto")
 	private Categoria categoria;
 
-	@ManyToOne
+	/*@ManyToOne
 	@JsonIgnoreProperties("produto")
-	private Usuario usuario;
+	private Usuario usuario;*/
 
 	public Long getId() {
 		return id;
@@ -104,11 +107,11 @@ public class Produto {
 		this.categoria = categoria;
 	}
 
-	public Usuario getUsuario() {
+	/*public Usuario getUsuario() {
 		return usuario;
 	}
 
 	public void setUsuario(Usuario usuario) {
 		this.usuario = usuario;
-	}
+	}*/
 }
