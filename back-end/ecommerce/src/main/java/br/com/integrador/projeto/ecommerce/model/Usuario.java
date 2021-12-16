@@ -1,5 +1,8 @@
 package br.com.integrador.projeto.ecommerce.model;
 
+import java.time.LocalDate;
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -7,7 +10,10 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
 
 @Entity
 @Table(name = "tb_usuario")
@@ -25,14 +31,30 @@ public class Usuario {
 	private String usuario;
 	
 	@NotBlank(message = "A senha deve ser preenchida.")
-	@Size(min = 8, max = 8, message = "A senha deve conter 8 caracteres.")
+	@Size(min = 8, message = "A senha deve conter no minimo 8 caracteres.")
 	private String senha;
 	
 	@NotBlank(message = "O telefone deve ser preenchido.")
-	@Size(min = 11, max = 11, message = "O telefone deve conter o DDD + os 9 números.")
+	@Size(min = 11, message = "O telefone deve conter o DDD + os 9 números.")
 	private String telefone;
 	
 	private String foto;
+	
+	@Column(name = "data_nascimento")
+	@JsonFormat(pattern = "yyyy-MM-dd")
+	@NotNull(message = "A data de nascimento não pode ser vazia")
+	private LocalDate dataNascimento;
+	
+	
+	public Usuario(long id, String nome, String usuario, String senha) {
+	}	
+
+	
+	//----------------------------------------------------------------
+	// GET AND SET
+//-----------------------------------------------------------------
+
+	
 
 	public Long getId() {
 		return id;
@@ -48,6 +70,14 @@ public class Usuario {
 
 	public void setNome(String nome) {
 		this.nome = nome;
+	}
+
+	public LocalDate getDataNascimento() {
+		return dataNascimento;
+	}
+
+	public void setDataNascimento(LocalDate dataNascimento) {
+		this.dataNascimento = dataNascimento;
 	}
 
 	public String getUsuario() {
