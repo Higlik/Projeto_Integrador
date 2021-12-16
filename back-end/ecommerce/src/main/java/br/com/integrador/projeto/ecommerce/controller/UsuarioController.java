@@ -57,9 +57,9 @@ public class UsuarioController {
 	}
 	
 	@PutMapping("/atualizar")
-	public ResponseEntity<Optional<Usuario>> putUsuario(@Valid @RequestBody Usuario usuario) {
-		return usuarioRepository.findByIdAndUsuario(usuario.getId(), usuario.getUsuario())
-			.map(resposta -> ResponseEntity.status(HttpStatus.OK).body(usuarioService.atualizarUsuario(usuario)))
+	public ResponseEntity<Usuario> putUsuario(@Valid @RequestBody Usuario usuario) {
+		return usuarioService.atualizarUsuario(usuario)
+			.map(resposta -> ResponseEntity.status(HttpStatus.OK).body(resposta))
 			.orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
 	}
 	
