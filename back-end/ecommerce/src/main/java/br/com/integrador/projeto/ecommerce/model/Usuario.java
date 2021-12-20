@@ -19,6 +19,8 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 @Entity
 @Table(name = "tb_usuario")
 public class Usuario {
@@ -30,8 +32,9 @@ public class Usuario {
 	@NotBlank(message = "O nome deve ser preenchido.")
 	private String nome;
 	
-	@NotBlank(message = "O usuário deve ser preenchido.")
-	@Email
+	@Schema(example = "email@email.com.br")
+	@NotNull(message = "O usuário deve ser preenchido.")
+	@Email(message = "O atributo Usuário deve ser um email válido!")
 	private String usuario;
 	
 	@NotBlank(message = "A senha deve ser preenchida.")
