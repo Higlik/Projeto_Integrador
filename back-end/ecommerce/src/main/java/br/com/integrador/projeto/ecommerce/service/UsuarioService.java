@@ -27,14 +27,21 @@ public class UsuarioService {
 	public Optional<Usuario> cadastrarUsuario(Usuario usuario) {
 
 		if (usuarioRepository.findByUsuario(usuario.getUsuario()).isPresent())
+<<<<<<< HEAD
 		throw new ResponseStatusException(
 				HttpStatus.BAD_REQUEST, "O Usuário já existe!", null);
 		
 		if(calcularIdade(usuario.getDataNascimento()) < 18)
 			throw new ResponseStatusException(
 					HttpStatus.BAD_REQUEST, "O Usuário é menor de idade!", null);
+=======
+			throw new ResponseStatusException(
+					HttpStatus.BAD_REQUEST, "O Usuário já existe!", null);
+>>>>>>> 9e654ec63604b1a56def8b260acb4971db9f0c1b
 		
-		usuario.setSenha(criptografarSenha(usuario.getSenha()));
+		if(calcularIdade(usuario.getDataNascimento()) < 18)
+			throw new ResponseStatusException(
+					HttpStatus.BAD_REQUEST, "O Usuário é menor de idade!", null);
 
 		return Optional.of(usuarioRepository.save(usuario));
 	
@@ -51,6 +58,9 @@ public class UsuarioService {
 					throw new ResponseStatusException(
 						HttpStatus.BAD_REQUEST, "O Usuário já existe!", null);
 			}
+			
+			
+			
 
 			if(calcularIdade(usuario.getDataNascimento()) < 18)
 			throw new ResponseStatusException(
