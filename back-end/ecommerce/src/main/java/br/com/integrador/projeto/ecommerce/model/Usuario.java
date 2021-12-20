@@ -18,6 +18,11 @@ import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+<<<<<<< HEAD
+
+import io.swagger.v3.oas.annotations.media.Schema;
+=======
+>>>>>>> 9e654ec63604b1a56def8b260acb4971db9f0c1b
 
 @Entity
 @Table(name = "tb_usuario")
@@ -30,8 +35,9 @@ public class Usuario {
 	@NotBlank(message = "O nome deve ser preenchido.")
 	private String nome;
 	
-	@NotBlank(message = "O usuário deve ser preenchido.")
-	@Email
+	@Schema(example = "email@email.com.br")
+	@NotNull(message = "O usuário deve ser preenchido.")
+	@Email(message = "O atributo Usuário deve ser um email válido!")
 	private String usuario;
 	
 	@NotBlank(message = "A senha deve ser preenchida.")
@@ -49,10 +55,16 @@ public class Usuario {
 	@NotNull(message = "A data de nascimento não pode ser vazia")
 	private LocalDate dataNascimento;
 	
+<<<<<<< HEAD
+	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
+	@JsonIgnoreProperties("usuario")
+	private List<Produto> produto;
+=======
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.REMOVE)
 	@JsonIgnoreProperties("usuario")
 	private List<Produto> produto;
 
+>>>>>>> 9e654ec63604b1a56def8b260acb4971db9f0c1b
 
 	
 	//----------------------------------------------------------------
@@ -60,6 +72,14 @@ public class Usuario {
 //-----------------------------------------------------------------
 
 	
+
+	public List<Produto> getProduto() {
+		return produto;
+	}
+
+	public void setProduto(List<Produto> produto) {
+		this.produto = produto;
+	}
 
 	public Long getId() {
 		return id;
