@@ -1,7 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Oleo+Script&display=swap');
 
 .logoDA{
-    font-family:'Times New Roman', Times, serif
+  --font-logo: 'Marcellus SC', serif;
+  cursor: pointer;
+  color: rgb(116, 46, 247)116, 46, 247); 
 }
 
 
@@ -29,4 +31,9 @@
   justify-content: space-between;
   align-items: center;
   margin-left: 100px;
+}
+
+.backgroundNavBar{
+  background-color: black;
+  padding: 10px;
 }

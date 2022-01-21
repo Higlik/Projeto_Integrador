@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Oleo+Script&display=swap');
 
 :root {
   --font-family: 'Oleo Script', cursive;
   --font-familia: 'Roboto', sans-serif;
+  --font-logo: 'Marcellus SC', serif;
 }

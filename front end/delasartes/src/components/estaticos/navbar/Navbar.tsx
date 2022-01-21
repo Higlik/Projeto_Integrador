@@ -1,17 +1,17 @@
 import React from "react";
-import { alpha, Box, createStyles, makeStyles, Theme, Typography } from '@material-ui/core';
+import { AppBar, Toolbar, alpha, Box, createStyles, makeStyles, Theme, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import './navbar.css';
+import './Navbar.css';
 
 function Navbar() {
     return (
         <>
             <div>
-                <div  className="displayNavBarLogo">
+                <div  className="displayNavBarLogo backgroundNavBar">
                    
                    <Link to='./home' className="text-decoration-none">
-                    <Box className="cursor"  >
-                        <Typography variant="h5" color="inherit" className="logoDA" >
+                    <Box className="logoDA"  >
+                        <Typography variant="h5" color="inherit" >
                             Delas Artes
                         </Typography>
                      </Box>
@@ -43,7 +43,7 @@ function Navbar() {
                         </Link>
 
 
-                        <Link to='/login' className="text-decocartor-none">
+                        <Link to='/categorias' className="text-decocartor-none">
                             <Box mx={1} className="cursor">
                                 <Typography variant="h6" color="inherit" className="FontNavbar">
                                     Categorias
