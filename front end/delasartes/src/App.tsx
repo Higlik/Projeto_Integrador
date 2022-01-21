@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
+import Footer from './components/estaticos/footer/Footer'
 
 function App() {
   return (
-    <h1>ola mundao</h1>
+    <Footer />
   );
 }
 
