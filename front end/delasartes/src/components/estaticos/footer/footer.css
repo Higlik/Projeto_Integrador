@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+.box1{
+    background-color: black;
+}
+.box2{
+background-color: #303F9F;
+height: 60px;
+}
+
+.redes{
+    font-size: 60px ;
+    color: white;
+}
+
+.text{
+    font-family: 'Oleo Script', cursive;
+    color: white;
+}
