@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Roboto:wght@100;700&display=swap');
+.imgInicial{
+    width: 94.9rem;
+    height: 500px;
+}
+
+.fontTitulo{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}

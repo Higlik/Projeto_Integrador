@@ -1,7 +1,7 @@
 import React from "react";
 import { alpha, Box, createStyles, makeStyles, Theme, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import './navbar.css';
 
 function Navbar() {
     return (

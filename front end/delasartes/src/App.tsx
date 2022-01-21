@@ -12,7 +12,7 @@ function App() {
   return (
 
     <Router>
-      <Navbar />
+   
         <Switch>
           <div style={{minHeight: '100vh'}}>
 
@@ -25,6 +25,7 @@ function App() {
             </Route>
 
             <Route path='/home'>
+              <Navbar />
               <Home />
             </Route>
             
