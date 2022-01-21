@@ -12,6 +12,12 @@ import Footer from './components/estaticos/footer/Footer'
 function App() {
   return (
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    <>
+    </>
+=======
+>>>>>>> task10
     <Router>
       <Navbar />
         <Switch>
@@ -36,10 +42,14 @@ function App() {
         </Switch>
       <Footer />
     </Router>
+<<<<<<< HEAD
 =======
     <>
     </>
 >>>>>>> 7d0aee9b6e3d5ffacc6da9f2bbc2efc5a98054cf
+=======
+>>>>>>> Pedro
+>>>>>>> task10
   );
 }
 
