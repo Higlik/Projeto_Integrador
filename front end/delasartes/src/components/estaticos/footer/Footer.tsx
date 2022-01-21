@@ -8,7 +8,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import {Typography, Box, Grid } from '@material-ui/core';
 import './footer.css'
 =======
->>>>>>> task10
+
 import './footer.css';
 const Footer = () => {
   return <div>
@@ -22,10 +22,7 @@ import FacebookIcon from '@material-ui/icons/Facebook';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import {Typography, Box, Grid } from '@material-ui/core';
 import './footer.css'
->>>>>>> 7d0aee9b6e3d5ffacc6da9f2bbc2efc5a98054cf
-=======
->>>>>>> Pedro
->>>>>>> task10
+
 
 function Footer() {
     return (
