@@ -1,0 +1,42 @@
+/*Configurações Padrões*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+
+
+
+    /*Reset text*/
+    a {
+        color: unset;
+        text-decoration: none;
+      }
+
+ /*Background*/
+body {
+
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(180deg, rgba(68, 34, 127, 1) 20%, rgba(108, 55, 210, 1) 57%, rgba(132, 223, 218, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(180deg, rgba(68, 34, 127, 1) 20%, rgba(108, 55, 210, 1) 57%, rgba(132, 223, 218, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(180deg, rgba(68, 34, 127, 1) 20%, rgba(108, 55, 210, 1) 57%, rgba(132, 223, 218, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#84DFDA', endColorstr='#44227F', GradientType=1 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(180deg, rgba(68, 34, 127, 1) 20%, rgba(108, 55, 210, 1) 57%, rgba(132, 223, 218, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(180deg, rgba(68, 34, 127, 1) 20%, rgba(108, 55, 210, 1) 57%, rgba(132, 223, 218, 1) 100%);
+    
+}
+
+.font{
+    font-family: var(--font-family);
+}
