@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+
+.logoDA{
+    font-family:'Times New Roman', Times, serif
+}
+
+
+.cursor{
+  cursor: pointer;
+  color: white;
+}
+
+.text-decorator-none{
+  text-decoration: none;
+}
+
+.displayNavbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px;
+}
+
+
+.displayNavBarLogo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+}
