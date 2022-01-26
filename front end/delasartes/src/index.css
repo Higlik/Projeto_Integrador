@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 :root {
-  --font-family: 'Marcellus SC', serif;
+  font-family: 'Marcellus SC', serif;  /* fonte logo */
+  font-family: 'Abril Fatface', cursive;  /* fonte padrão site */
 }

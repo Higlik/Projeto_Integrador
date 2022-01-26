@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 .box1{
     background-color: black;
@@ -14,6 +15,5 @@ height: 60px;
 }
 
 .text{
-    font-family: 'Oleo Script', cursive;
     color: white;
 }
