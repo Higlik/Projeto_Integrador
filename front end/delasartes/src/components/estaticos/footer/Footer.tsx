@@ -29,7 +29,7 @@ function Footer() {
                             <Typography variant="subtitle2" align="center" gutterBottom className='text' >© 2022 Copyright:</Typography>
                         </Box>
                         <Box>
-                                <Typography variant="subtitle2" gutterBottom className='text' align="center">DelasArtes</Typography>
+                                <Typography variant="subtitle2" gutterBottom className='text' align="center">delasArtes</Typography>
                             
                         </Box>
                     </Box>

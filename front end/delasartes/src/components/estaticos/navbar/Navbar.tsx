@@ -1,4 +1,8 @@
 import React from "react";
+import AddBoxIcon from '@mui/icons-material/AddBox';
+import SearchIcon from '@mui/icons-material/Search';
+import LocalMallIcon from '@mui/icons-material/LocalMall';
+import LogoutIcon from '@mui/icons-material/Logout';
 import { AppBar, Toolbar, alpha, Box, createStyles, makeStyles, Theme, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
@@ -11,33 +15,33 @@ function Navbar() {
                    
                    <Link to='./home' className="text-decoration-none">
                     <Box className="logoDA"  >
-                        <Typography variant="h5" color="inherit" >
-                            Delas Artes
+                        <Typography variant="h5">
+                            delasArtes
                         </Typography>
                      </Box>
                     </Link>
 
                     <Box className="displayNavbar">
-                    <Link to='./sobre' className="text-decoration-none">
+                    <Link to='./categorias' className="text-decoration-none">
                         <Box mx={1} className="cursor">
                             <Typography variant="h6" color="inherit" className="FontNavbar">
-                                Sobre
+                                categorias
                             </Typography>
                         </Box>
                     </Link>
 
-                        <Link to='./contato' className="text-decocartor-none">
+                        <Link to='./artistas' className="text-decocartor-none">
                             <Box mx={1} className="cursor">
                                 <Typography variant="h6" color="inherit" className="FontNavbar">
-                                    Contato
+                                    artistas
                                 </Typography>
                             </Box>
                         </Link>
 
-                        <Link to='./produtos' className="text-decocartor-none">
+                        <Link to='./sobre' className="text-decocartor-none">
                             <Box mx={1} className="cursor">
                                 <Typography variant="h6" color="inherit" className="FontNavbar">
-                                    Produtos
+                                    sobre
                                 </Typography>
                             </Box>
                         </Link>

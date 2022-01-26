@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Oleo+Script&display=swap');
 
 .logoDA{
-  --font-logo: 'Marcellus SC', serif;
+  font-family: 'Marcellus SC', serif;
   cursor: pointer;
-  color: rgb(116, 46, 247)116, 46, 247); 
+  color: blue; 
+  margin-left: 50px;
 }
 
 
@@ -19,7 +20,7 @@
 .displayNavbar{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: center;
   margin: 10px;
 }
@@ -28,12 +29,18 @@
 .displayNavBarLogo{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  margin-left: 100px;
 }
 
 .backgroundNavBar{
   background-color: black;
   padding: 10px;
+}
+
+.iconsNavBar{
+  font-size: 30px;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
 }
