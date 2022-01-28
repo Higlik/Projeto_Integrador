@@ -1,8 +1,9 @@
+
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
 import Categorias from '../../../../models/Categorias';
-import './ListaCategorias.css';
+import './listaCategoria.css';
 import useLocalStorage from 'react-use-localstorage';
 import { useHistory } from 'react-router-dom';
 import { busca } from '../../../../services/Service';

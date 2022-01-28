@@ -7,6 +7,8 @@ import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
 import './App.css';
 import Usuario from './paginas/usuario/Usuario';
+import ListarCategorias from './components/estaticos/categorias/listarCategorias/ListarCategorias';
+import ListarProdutos from './components/estaticos/produtos/listarProdutos/ListarProdutos';
 
 
 function App() {
@@ -36,6 +38,14 @@ function App() {
 
             <Route path='/usuario'>
               <Usuario />
+            </Route>
+
+            <Route path='/categorias'>
+              <ListarCategorias />
+            </Route>
+
+            <Route path='/produtos'>
+              <ListarProdutos />
             </Route>
 
           </div>

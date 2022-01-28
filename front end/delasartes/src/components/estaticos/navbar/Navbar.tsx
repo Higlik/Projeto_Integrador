@@ -21,6 +21,16 @@ function Navbar() {
                      </Box>
                     </Link>
 
+
+                    <Link to='/produtos' className='text-decorator-none'>
+                            <Box mx={1} className="cursor" >
+                                <Typography variant="h6" color="inherit" className="LgLoginNavBar">
+                                   Produtos
+                                </Typography>
+                            </Box>
+                        </Link>
+
+
                     <Box className="displayNavbar">
                     <Link to='./categorias' className="text-decoration-none">
                         <Box mx={1} className="cursor">
@@ -47,7 +57,7 @@ function Navbar() {
                         </Link>
 
 
-                        <Link to='/categorias' className="text-decocartor-none">
+                        <Link to='' className="text-decocartor-none">
                             <Box mx={1} className="cursor">
                                 <Typography variant="h6" color="inherit" className="FontNavbar">
                                     
