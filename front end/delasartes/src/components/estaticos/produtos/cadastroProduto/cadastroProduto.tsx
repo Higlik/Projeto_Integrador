@@ -52,7 +52,7 @@ function CadastroProdutos() {
   }, [id])
 
   async function getCategorias() {
-    await busca("/categoria", setCategoria, {
+    await busca("/categorias", setCategoria, {
       headers: {
         'Authorization': token
       }
@@ -60,7 +60,7 @@ function CadastroProdutos() {
   }
 
   async function findByIdProdutos(id: string) {
-    await buscaId(`produtos/${id}`, setProduto, {
+    await buscaId(`produto/${id}`, setProduto, {
       headers: {
         'Authorization': token
       }
@@ -81,14 +81,14 @@ function CadastroProdutos() {
     e.preventDefault()
 
     if (id !== undefined) {
-      put(`/produtos`, produto, setProduto, {
+      put(`/produto`, produto, setProduto, {
         headers: {
           'Authorization': token
         }
       })
       alert('Produto atualizado com sucesso');
     } else {
-      post(`/produtos`, produto, setProduto, {
+      post(`/produto`, produto, setProduto, {
         headers: {
           'Authorization': token
         }
@@ -100,7 +100,7 @@ function CadastroProdutos() {
   }
 
   function back() {
-    history.push('/posts')
+    history.push('/produto')
   }
 
   return (
@@ -122,7 +122,7 @@ function CadastroProdutos() {
           <Select
             labelId="demo-simple-select-helper-label"
             id="demo-simple-select-helper"
-            onChange={(e) => buscaId(`/categoria/${e.target.value}`, setCategoria, {
+            onChange={(e) => buscaId(`/categorias/${e.target.value}`, setCategoria, {
               headers: {
                 'Authorization': token
               }

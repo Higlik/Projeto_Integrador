@@ -44,7 +44,7 @@ function App() {
               <ListarCategorias />
             </Route>
 
-            <Route path='/produtos'>
+            <Route path='/produto'>
               <ListarProdutos />
             </Route>
 

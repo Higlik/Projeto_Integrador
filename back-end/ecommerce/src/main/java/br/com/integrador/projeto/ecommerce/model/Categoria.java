@@ -28,10 +28,6 @@ public class Categoria {
 	@Size(min = 5, max = 50, message = "O gênero deve conter entra 5 e 50 caracteres.")
 	private String genero;
 	
-	@NotBlank(message = "O subgênero deve ser preenchido.")
-	@Size(min = 5, max = 50, message = "O subgênero deve conter entra 5 e 50 caracteres.")
-	private String subgenero;
-	
 	@NotNull
 	@Size(min = 0, max = 1000, message = "O subgênero deve conter até 1000 caracteres.")
 	private String descricao;
@@ -65,13 +61,6 @@ public class Categoria {
 		this.genero = genero;
 	}
 
-	public String getSubgenero() {
-		return subgenero;
-	}
-
-	public void setSubgenero(String subgenero) {
-		this.subgenero = subgenero;
-	}
 
 	public String getDescricao() {
 		return descricao;
