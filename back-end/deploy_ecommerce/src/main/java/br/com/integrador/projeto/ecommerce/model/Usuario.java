@@ -1,10 +1,8 @@
 package br.com.integrador.projeto.ecommerce.model;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,7 +14,6 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -41,36 +38,16 @@ public class Usuario {
 	@Size(min = 8, message = "A senha deve conter no minimo 8 caracteres.")
 	private String senha;
 	
-	@NotBlank(message = "O telefone deve ser preenchido.")
-	@Size(min = 11, message = "O telefone deve conter o DDD + os 9 números.")
-	private String telefone;
 	
 	private String foto;
 	
-	@Column(name = "data_nascimento")
-	@JsonFormat(pattern = "yyyy-MM-dd")
-	@NotNull(message = "A data de nascimento não pode ser vazia")
-	private LocalDate dataNascimento;
-	
+
+
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("usuario")
 	private List<Produto> produto;
-
 	
-	//----------------------------------------------------------------
-	// GET AND SET
-//-----------------------------------------------------------------
-
 	
-
-	public List<Produto> getProduto() {
-		return produto;
-	}
-
-	public void setProduto(List<Produto> produto) {
-		this.produto = produto;
-	}
-
 	public Long getId() {
 		return id;
 	}
@@ -87,13 +64,6 @@ public class Usuario {
 		this.nome = nome;
 	}
 
-	public LocalDate getDataNascimento() {
-		return dataNascimento;
-	}
-
-	public void setDataNascimento(LocalDate dataNascimento) {
-		this.dataNascimento = dataNascimento;
-	}
 
 	public String getUsuario() {
 		return usuario;
@@ -111,13 +81,6 @@ public class Usuario {
 		this.senha = senha;
 	}
 
-	public String getTelefone() {
-		return telefone;
-	}
-
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
-	}
 
 	public String getFoto() {
 		return foto;
@@ -126,4 +89,14 @@ public class Usuario {
 	public void setFoto(String foto) {
 		this.foto = foto;
 	}
+
+	public List<Produto> getProduto() {
+		return produto;
+	}
+
+	public void setProduto(List<Produto> produto) {
+		this.produto = produto;
+	}
+	
+	
 }
