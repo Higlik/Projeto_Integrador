@@ -50,7 +50,7 @@ function Navbar() {
                         <Link to='/categorias' className="text-decocartor-none">
                             <Box mx={1} className="cursor">
                                 <Typography variant="h6" color="inherit" className="FontNavbar">
-                                    Categorias
+                                    
                                 </Typography>
                             </Box>
                         </Link>
@@ -58,6 +58,7 @@ function Navbar() {
                         <Link to='/login' className='text-decorator-none'>
                             <Box mx={1} className="cursor" >
                                 <Typography variant="h6" color="inherit" className="LgLoginNavBar">
+                                    Login
                                 </Typography>
                             </Box>
                         </Link>
