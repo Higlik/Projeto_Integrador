@@ -118,7 +118,7 @@ function CadastroProdutos() {
 
 
         <FormControl >
-          <InputLabel id="demo-simple-select-helper-label">Tema </InputLabel>
+          <InputLabel id="demo-simple-select-helper-label">Categoria </InputLabel>
           <Select
             labelId="demo-simple-select-helper-label"
             id="demo-simple-select-helper"
@@ -133,7 +133,7 @@ function CadastroProdutos() {
               ))
             }
           </Select>
-          <FormHelperText>Escolha um tema para a postagem</FormHelperText>
+          <FormHelperText>Escolha uma categoria para produto</FormHelperText>
           <Button type="submit" variant="contained" color="primary">
             Finalizar
           </Button>

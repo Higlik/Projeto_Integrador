@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-import React from 'react';
-
-const listarProdutos = () => {
-  return <div></div>;
-};
-
-export default listarProdutos;
-=======
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { busca } from '../../../../services/Service';
@@ -90,4 +81,3 @@ function ListarProdutos() {
 }
 
 export default ListarProdutos;
->>>>>>> 0331d1185494537904cc49e06c00bcf181c1d039

@@ -1,8 +1,14 @@
 import React from 'react';
+import CadastroCategoria from '../../components/estaticos/categorias/cadastroCategoria/CadastroCategoria';
+import ModalProduto from '../../components/estaticos/produtos/modalProduto/ModalProduto';
 
 const Usuario = () => {
   return (
-    <p>não dê erro</p>
+    <div>
+        <ModalProduto/>
+        <button><CadastroCategoria/></button>  
+    </div>
+   
 
   )
 };
