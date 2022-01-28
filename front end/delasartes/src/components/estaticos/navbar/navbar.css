@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.logoDA{
+  font-family: 'Marcellus SC', serif;
+  cursor: pointer;
+  color: blue; 
+  margin-left: 50px;
+}
+
+
+.cursor{
+  cursor: pointer;
+  color: white;
+}
+
+.text-decorator-none{
+  text-decoration: none;
+}
+
+.displayNavbar{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px;
+}
+
+
+.displayNavBarLogo{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.backgroundNavBar{
+  background-color: black;
+  padding: 10px;
+}
+
+.iconsNavBar{
+  font-size: 30px;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+}

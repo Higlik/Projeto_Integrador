@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+.box1{
+    background-color: black;
+}
+.box2{
+background-color: #303F9F;
+height: 60px;
+}
+
+.redes{
+    font-size: 60px !important;
+    color: white;
+}
+
+.text{
+    color: white;
+}
