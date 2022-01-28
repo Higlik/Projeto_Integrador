@@ -54,6 +54,14 @@ function Navbar() {
                                 </Typography>
                             </Box>
                         </Link>
+                        
+                        <Link to='/usuario' className="text-decocartor-none">
+                            <Box mx={1} className="cursor">
+                                <Typography variant="h6" color="inherit" className="FontNavbar">
+                                    Meu Perfil
+                                </Typography>
+                            </Box>
+                        </Link>
 
                         <Link to='/login' className='text-decorator-none'>
                             <Box mx={1} className="cursor" >
