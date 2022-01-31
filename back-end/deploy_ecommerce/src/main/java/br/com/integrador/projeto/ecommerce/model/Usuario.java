@@ -1,6 +1,9 @@
 package br.com.integrador.projeto.ecommerce.model;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -41,10 +44,18 @@ public class Usuario {
 	@Size(min = 8, message = "A senha deve conter no minimo 8 caracteres.")
 	private String senha;
 	
+<<<<<<< HEAD
+=======
+	
+	private String foto;
+	
+
+>>>>>>> main
 
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("usuario")
 	private List<Produto> produto;
+<<<<<<< HEAD
 
 
 
@@ -53,16 +64,10 @@ public class Usuario {
 	// GET AND SET e
 //-----------------------------------------------------------------
 
+=======
 	
-
-	public List<Produto> getProduto() {
-		return produto;
-	}
-
-	public void setProduto(List<Produto> produto) {
-		this.produto = produto;
-	}
-
+>>>>>>> main
+	
 	public Long getId() {
 		return id;
 	}
@@ -79,6 +84,10 @@ public class Usuario {
 		this.nome = nome;
 	}
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> main
 	public String getUsuario() {
 		return usuario;
 	}
@@ -95,9 +104,28 @@ public class Usuario {
 		this.senha = senha;
 	}
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> main
 
 
-
+<<<<<<< HEAD
 	
 
+=======
+	public void setFoto(String foto) {
+		this.foto = foto;
+	}
+
+	public List<Produto> getProduto() {
+		return produto;
+	}
+
+	public void setProduto(List<Produto> produto) {
+		this.produto = produto;
+	}
+	
+	
+>>>>>>> main
 }
