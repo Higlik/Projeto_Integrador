@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 .dist_{
-    padding-top: 6rem;
+    padding-top: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 6rem;
+    gap: 2rem;
 }
 
 
@@ -18,7 +18,7 @@
 
 .display img{
     height: 300px;
-    width: 240px;
+    width: 435px;
 }
 
 .display_text h1{

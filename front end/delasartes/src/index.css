@@ -2,6 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
 :root {
-  font-family: 'Marcellus SC', serif;  /* fonte logo */
-  font-family: 'Abril Fatface', cursive;  /* fonte padrão site */
+  --font-family: 'Marcellus SC', serif;  /* fonte logo */
+  --abril-fatface: 'Abril Fatface', cursive;  /* fonte padrão site */
 }
