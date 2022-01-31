@@ -1,8 +1,6 @@
 package br.com.integrador.projeto.ecommerce.service;
 
 import java.nio.charset.Charset;
-import java.time.LocalDate;
-import java.time.Period;
 import java.util.Optional;
 
 import org.apache.commons.codec.binary.Base64;
@@ -27,21 +25,11 @@ public class UsuarioService {
 	public Optional<Usuario> cadastrarUsuario(Usuario usuario) {
 
 		if (usuarioRepository.findByUsuario(usuario.getUsuario()).isPresent())
-<<<<<<< HEAD
 		throw new ResponseStatusException(
 				HttpStatus.BAD_REQUEST, "O Usuário já existe!", null);
 		
-		if(calcularIdade(usuario.getDataNascimento()) < 18)
-			throw new ResponseStatusException(
-					HttpStatus.BAD_REQUEST, "O Usuário é menor de idade!", null);
-=======
-			throw new ResponseStatusException(
-					HttpStatus.BAD_REQUEST, "O Usuário já existe!", null);
->>>>>>> 9e654ec63604b1a56def8b260acb4971db9f0c1b
-		
-		if(calcularIdade(usuario.getDataNascimento()) < 18)
-			throw new ResponseStatusException(
-					HttpStatus.BAD_REQUEST, "O Usuário é menor de idade!", null);
+
+		usuario.setSenha(criptografarSenha(usuario.getSenha()));
 
 		return Optional.of(usuarioRepository.save(usuario));
 	
@@ -61,11 +49,6 @@ public class UsuarioService {
 			
 			
 			
-
-			if(calcularIdade(usuario.getDataNascimento()) < 18)
-			throw new ResponseStatusException(
-					HttpStatus.BAD_REQUEST, "O Usuário é menor de idade!", null);
-
 			usuario.setSenha(criptografarSenha(usuario.getSenha()));
 
 			return Optional.of(usuarioRepository.save(usuario));
@@ -74,10 +57,7 @@ public class UsuarioService {
 		return Optional.empty();
 	}	
 		
-		
-		private int calcularIdade(LocalDate dataNascimento) {
-			return Period.between(dataNascimento, LocalDate.now()).getYears();
-		}
+	
 
 	public Optional<UsuarioLogin> autenticarUsuario(Optional<UsuarioLogin> usuarioLogin) {
 
@@ -89,9 +69,6 @@ public class UsuarioService {
 				usuarioLogin.get().setId(usuario.get().getId());
 				usuarioLogin.get().setNome(usuario.get().getNome());
 				usuarioLogin.get().setUsuario(usuario.get().getUsuario());
-				usuarioLogin.get().setTelefone(usuario.get().getTelefone());
-				usuarioLogin.get().setFoto(usuario.get().getFoto());
-				usuarioLogin.get().setDataNascimento(usuario.get().getDataNascimento());
 				usuarioLogin.get().setToken(gerarBasicToken(usuarioLogin.get().getUsuario(), usuarioLogin.get().getSenha()));
 				usuarioLogin.get().setSenha(usuario.get().getSenha());
 
