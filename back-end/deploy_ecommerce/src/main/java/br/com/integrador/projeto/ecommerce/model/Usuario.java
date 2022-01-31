@@ -1,5 +1,9 @@
 package br.com.integrador.projeto.ecommerce.model;
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> main
 import java.util.List;
 
 import javax.persistence.CascadeType;
@@ -17,6 +21,8 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+
+
 
 @Entity
 @Table(name = "tb_usuario")
@@ -38,15 +44,29 @@ public class Usuario {
 	@Size(min = 8, message = "A senha deve conter no minimo 8 caracteres.")
 	private String senha;
 	
+<<<<<<< HEAD
+=======
 	
 	private String foto;
 	
 
+>>>>>>> main
 
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
 	@JsonIgnoreProperties("usuario")
 	private List<Produto> produto;
+<<<<<<< HEAD
+
+
+
 	
+	//----------------------------------------------------------------
+	// GET AND SET e
+//-----------------------------------------------------------------
+
+=======
+	
+>>>>>>> main
 	
 	public Long getId() {
 		return id;
@@ -64,7 +84,10 @@ public class Usuario {
 		this.nome = nome;
 	}
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> main
 	public String getUsuario() {
 		return usuario;
 	}
@@ -81,11 +104,16 @@ public class Usuario {
 		this.senha = senha;
 	}
 
+<<<<<<< HEAD
 
-	public String getFoto() {
-		return foto;
-	}
+=======
+>>>>>>> main
 
+
+<<<<<<< HEAD
+	
+
+=======
 	public void setFoto(String foto) {
 		this.foto = foto;
 	}
@@ -99,4 +127,5 @@ public class Usuario {
 	}
 	
 	
+>>>>>>> main
 }

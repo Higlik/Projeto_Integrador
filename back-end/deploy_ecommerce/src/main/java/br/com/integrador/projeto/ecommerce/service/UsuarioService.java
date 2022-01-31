@@ -30,6 +30,10 @@ public class UsuarioService {
 				HttpStatus.BAD_REQUEST, "O Usuário já existe!", null);
 		
 
+<<<<<<< HEAD
+		usuario.setSenha(criptografarSenha(usuario.getSenha()));
+=======
+>>>>>>> main
 
 		return Optional.of(usuarioRepository.save(usuario));
 	
@@ -46,7 +50,13 @@ public class UsuarioService {
 					throw new ResponseStatusException(
 						HttpStatus.BAD_REQUEST, "O Usuário já existe!", null);
 			}
+<<<<<<< HEAD
+			
+			
+			
+=======
 
+>>>>>>> main
 			usuario.setSenha(criptografarSenha(usuario.getSenha()));
 
 			return Optional.of(usuarioRepository.save(usuario));
@@ -55,6 +65,10 @@ public class UsuarioService {
 		return Optional.empty();
 	}	
 		
+<<<<<<< HEAD
+	
+=======
+>>>>>>> main
 
 	public Optional<UsuarioLogin> autenticarUsuario(Optional<UsuarioLogin> usuarioLogin) {
 
@@ -66,7 +80,10 @@ public class UsuarioService {
 				usuarioLogin.get().setId(usuario.get().getId());
 				usuarioLogin.get().setNome(usuario.get().getNome());
 				usuarioLogin.get().setUsuario(usuario.get().getUsuario());
+<<<<<<< HEAD
+=======
 				usuarioLogin.get().setFoto(usuario.get().getFoto());
+>>>>>>> main
 				usuarioLogin.get().setToken(gerarBasicToken(usuarioLogin.get().getUsuario(), usuarioLogin.get().getSenha()));
 				usuarioLogin.get().setSenha(usuario.get().getSenha());
 

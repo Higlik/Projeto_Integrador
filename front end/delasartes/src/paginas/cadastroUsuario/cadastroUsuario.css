@@ -1,0 +1,12 @@
+.mg{
+    padding-top: 100px;
+}
+
+.textos2{
+    font-weight: bolder !important;
+}
+
+.buttonDisplay{
+    display: flex;
+    flex-direction: row;
+}
