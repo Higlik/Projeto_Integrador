@@ -1,9 +1,9 @@
 package br.com.integrador.projeto.ecommerce.model;
 
+
 import java.util.List;
 
 import javax.persistence.CascadeType;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,7 +16,6 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
 
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -41,9 +40,6 @@ public class Usuario {
 	@NotBlank(message = "A senha deve ser preenchida.")
 	@Size(min = 8, message = "A senha deve conter no minimo 8 caracteres.")
 	private String senha;
-	
-	
-	private String foto;
 	
 
 	@OneToMany(mappedBy = "usuario", cascade = CascadeType.ALL)
@@ -99,12 +95,9 @@ public class Usuario {
 		this.senha = senha;
 	}
 
-	public String getFoto() {
-		return foto;
-	}
 
-	public void setFoto(String foto) {
-		this.foto = foto;
-	}
+
+
+	
 
 }
