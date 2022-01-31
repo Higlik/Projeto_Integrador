@@ -1,5 +1,5 @@
 import React from 'react';
-import './home.css';
+import './Home.css';
 import TelaProduto from '../../components/estaticos/produtos/telaProduto/TelaProduto';
 const Home = () => {
   return <div>

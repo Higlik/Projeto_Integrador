@@ -8,7 +8,7 @@ import Login from './paginas/login/Login';
 import './App.css';
 import Usuario from './paginas/usuario/Usuario';
 import ListarCategorias from './components/estaticos/categorias/listarCategorias/ListarCategorias';
-import ListarProdutos from './components/estaticos/produtos/listarProdutos/listarProdutos';
+import ListarProdutos from './components/estaticos/produtos/listarProdutos/ListarProdutos';
 
 
 function App() {

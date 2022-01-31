@@ -4,10 +4,9 @@ import SearchIcon from '@mui/icons-material/Search';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import PersonIcon from '@mui/icons-material/Person';
-import LogoutIcon from '@mui/icons-material/Logout';
 import { AppBar, Toolbar, alpha, Box, createStyles, makeStyles, Theme, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import './navbar.css';
+import './Navbar.css';
 
 function Navbar() {
     return (
@@ -44,7 +43,7 @@ function Navbar() {
                         <Box mx={1} className="cursor" >
                             <Typography variant="h6" className="LgLoginNavBar">
                                 <Box className="displayitens">
-                                <p >Produtos</p>
+                                <p>Produtos</p>
                                 <KeyboardArrowDownIcon />
                                 </Box>
                             </Typography>
