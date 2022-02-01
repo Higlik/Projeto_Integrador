@@ -40,7 +40,6 @@ public class Produto {
 	private int quantidade;
 	
 	@NotBlank(message = "A foto deve ser preenchida.")
-	@Size(min = 1, max = 10)
 	private String foto;
 	
 	@ManyToOne
