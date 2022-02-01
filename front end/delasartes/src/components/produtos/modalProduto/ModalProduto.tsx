@@ -5,7 +5,7 @@ import Modal from '@material-ui/core/Modal';
 import {Button,Box } from "@material-ui/core"
 import CloseIcon from '@material-ui/icons/Close';
 import './ModalProduto.css';
-import CadastroProdutos from '../cadastroProduto/CadastroProduto';
+import CadastroProduto from '../cadastroProduto/cadastroProduto'
 
 
 function getModalStyle() {
@@ -52,7 +52,7 @@ function ModalProduto () {
       
       </Box>
       
-      <CadastroProdutos/>
+      <CadastroProduto/>
       
     </div>
   );

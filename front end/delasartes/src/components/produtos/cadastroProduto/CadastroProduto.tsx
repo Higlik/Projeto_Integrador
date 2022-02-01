@@ -1,12 +1,12 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
 import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
 import { useHistory, useParams } from 'react-router-dom';
-import Produtos from '../../../../models/Produtos';
+import Produto from '../../../models/Produto';
 import useLocalStorage from 'react-use-localstorage';
-import Categoria from '../../../../models/Categorias';
-import { busca, buscaId, post, put } from '../../../../services/Service';
+import Categoria from '../../../models/Categorias';
+import { busca, buscaId, post, put } from '../../../services/Service';
 
-function CadastroProdutos() {
+function CadastroProduto() {
   let history = useHistory();
   const { id } = useParams<{ id: string }>();
   const [categorias, setCategorias] = useState<Categoria[]>([])
@@ -27,7 +27,7 @@ function CadastroProdutos() {
       subgenero: 0,
       descricao: ''
     })
-  const [produto, setProduto] = useState<Produtos>({
+  const [produto, setProduto] = useState<Produto>({
     id: 0,
     nome: '',
     valor: 0,
@@ -142,5 +142,5 @@ function CadastroProdutos() {
     </Container>
   )
 }
-export default CadastroProdutos;
+export default CadastroProduto;
 

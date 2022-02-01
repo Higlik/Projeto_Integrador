@@ -1,6 +1,6 @@
 import Categorias from './Categorias'
 
-interface Produtos {
+interface Produto {
     id: number;
     nome: string;
     valor: number;
@@ -10,4 +10,4 @@ interface Produtos {
     categoria?: Categorias| null;
 }
 
-export default Produtos;
+export default Produto;

@@ -7,8 +7,8 @@ import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
 import './App.css';
 import Usuario from './paginas/usuario/Usuario';
-import ListarCategorias from './components/estaticos/categorias/listarCategorias/ListarCategorias';
-import ListarProdutos from './components/estaticos/produtos/listarProdutos/ListarProdutos';
+import ListarCategorias from './components/categorias/listarCategorias/ListarCategorias';
+import ListarProduto from './components/produtos/listarProdutos/ListarProduto';
 
 
 function App() {
@@ -45,7 +45,7 @@ function App() {
             </Route>
 
             <Route path='/produto'>
-              <ListarProdutos />
+              <ListarProduto />
             </Route>
 
           </div>
