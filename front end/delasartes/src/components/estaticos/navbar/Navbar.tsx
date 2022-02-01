@@ -6,12 +6,12 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import PersonIcon from '@mui/icons-material/Person';
 import { AppBar, Toolbar, alpha, Box, createStyles, makeStyles, Theme, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import './navbar.css';
 
 function Navbar() {
     return (
         <>
-
+            
             <div className="displayNavBar backgroundNavBar">
 
                 <Link to='./home' className="text-decoration-none">
@@ -22,7 +22,7 @@ function Navbar() {
                     </Box>
                 </Link>
 
-                <Box className="font displayitens">
+                <Box className="fontnavbar displayitens">
                     <Link to='./sobre' className="text-decocartor-none">
                         <Box mx={1} className="cursor">
                             <Typography variant="h6" className="FontNavbar">
@@ -42,7 +42,7 @@ function Navbar() {
                     <Link to='/produto' className='text-decorator-none'>
                         <Box mx={1} className="cursor" >
                             <Typography variant="h6" className="LgLoginNavBar">
-                                <Box className="displayitens">
+                                <Box className="displayarrow">
                                 <p>Produtos</p>
                                 <KeyboardArrowDownIcon />
                                 </Box>
@@ -52,7 +52,7 @@ function Navbar() {
                     <Link to='./categorias' className="text-decoration-none">
                         <Box mx={1} className="cursor">
                             <Typography variant="h6" className="FontNavbar">
-                            <Box className="displayitens">
+                            <Box className="displayarrow">
                                 <p>Categorias</p>
                                 <KeyboardArrowDownIcon />
                                 </Box>
@@ -83,7 +83,7 @@ function Navbar() {
                                 </Typography>
                             </Box>
                         </Link>
-                        <Link to='/login' className='text-decorator-none'>
+                        <Link to='/usuario' className='text-decorator-none'>
                             <Box mx={1} className="cursor" >
                                 <Typography variant="h6" className="LgLoginNavBar">
                                     <PersonIcon className="tamanhoicones" />

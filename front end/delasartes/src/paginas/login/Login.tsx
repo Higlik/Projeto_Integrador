@@ -4,7 +4,8 @@ import { Link, useHistory } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
 import { login } from '../../services/Service';
 import UserLogin from '../../models/UserLogin';
-import './Login.css';
+import CadastroUsuario from '../cadastroUsuario/CadastroUsuario'
+import './login.css';
 
 function Login() {
     let history = useHistory();
@@ -64,10 +65,15 @@ function Login() {
                         <Link to='/cadastrousuario'>
                             <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
                         </Link>
+
+                        
                             
                     </Box>
                 </Box>
+               
             </Grid>
+        
+                
            
         </Grid>
     );

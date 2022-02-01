@@ -10,7 +10,7 @@
   margin-bottom: 5px;
 }
 
-.font p{
+.fontnavbar p{
   font-family: var(--abril-fatface);
 }
 
@@ -31,6 +31,7 @@
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  top:0;
   width: 100%;
 }
 
@@ -39,7 +40,11 @@
   padding: 10px;
 }
 
-
+.displayarrow{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 .displayitens{
   display: flex;
   flex-direction: row;

@@ -24,7 +24,6 @@ function CadastroProdutos() {
     {
       id: 0,
       genero: '',
-      subgenero: 0,
       descricao: ''
     })
   const [produto, setProduto] = useState<Produtos>({
@@ -56,8 +55,11 @@ function CadastroProdutos() {
       headers: {
         'Authorization': token
       }
+     
     })
+    console.log(categorias)
   }
+ 
 
   async function findByIdProdutos(id: string) {
     await buscaId(`produto/${id}`, setProduto, {
@@ -93,6 +95,7 @@ function CadastroProdutos() {
           'Authorization': token
         }
       })
+      console.log(produto);
       alert('Produto cadastrado com sucesso');
     }
     back()
@@ -106,17 +109,12 @@ function CadastroProdutos() {
   return (
     <Container maxWidth="sm" className="topo">
       <form onSubmit={onSubmit}>
-        <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro postagem</Typography>
+        <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro de Produto</Typography>
         <TextField value={produto.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="nome" label="nome" variant="outlined" name="nome" margin="normal" fullWidth />
         <TextField value={produto.valor} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="valor" label="valor" name="valor" variant="outlined" margin="normal" fullWidth />
         <TextField value={produto.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="descricao" label="descricao" name="descricao" variant="outlined" margin="normal" fullWidth />
         <TextField value={produto.quantidade} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="quantidade" label="quantidade" name="quantidade" variant="outlined" margin="normal" fullWidth />
         <TextField value={produto.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="foto" label="foto" name="foto" variant="outlined" margin="normal" fullWidth />
-
-
-
-
-
         <FormControl >
           <InputLabel id="demo-simple-select-helper-label">Categoria </InputLabel>
           <Select
@@ -129,11 +127,11 @@ function CadastroProdutos() {
             })}>
             {
               categorias.map(categoria => (
-                <MenuItem value={categoria.id}>{categoria.descricao}</MenuItem>
+                <MenuItem value={categoria.id}>{categoria.genero}</MenuItem>
               ))
             }
           </Select>
-          <FormHelperText>Escolha uma categoria para produto</FormHelperText>
+          <FormHelperText>Escolha uma categoria para o produto</FormHelperText>
           <Button type="submit" variant="contained" color="primary">
             Finalizar
           </Button>

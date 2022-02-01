@@ -8,6 +8,11 @@
     gap: 1rem;
 }
 
+.img-relative{
+    position: relative;
+    text-align: center;
+}
+
 .display{
     display: flex;
     flex-direction: column;
@@ -31,3 +36,17 @@
     color: white;
     font-size: 12px;
 }
+
+.zoom {
+    transition: transform .2s; 
+  }
+
+  .zoom:hover {
+    transform:  translate(3%, -3%) scale(1.1);
+  }
+
+  .bottom-lef{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }

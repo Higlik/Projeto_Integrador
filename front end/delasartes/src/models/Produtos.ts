@@ -1,11 +1,11 @@
 import Categorias from './Categorias'
 
 interface Produtos {
-    id: number;
+    id: Number;
     nome: string;
-    valor: number;
+    valor: Number;
     descricao: string;
-    quantidade: number;
+    quantidade: Number;
     foto: string;
     categoria?: Categorias| null;
 }

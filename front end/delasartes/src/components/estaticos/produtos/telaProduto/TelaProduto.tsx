@@ -11,16 +11,17 @@ const TelaProduto = () => {
   return (
     <div className='dist_'>
             <Link  to='/produto/1' className='text-decoration-none'>
-                   <img src="https://imgur.com/uWnupVN.png" alt="Produto 1" />
-                 
+                    <img className='zoom' src="https://imgur.com/uWnupVN.png" alt="Produto 1" /> 
+                   
             </Link>
             <Link  to='/produto/2' className='text-decoration-none'>
-                    <img src="https://imgur.com/72VcnPy.png" alt="Produto 2" />
+                    <img className='zoom' src="https://imgur.com/72VcnPy.png" alt="Produto 2" />
             
             </Link>
 
             <Link  to='/produto/3' className='text-decoration-none'>
-                    <img src="https://imgur.com/2XbgVHh.png" alt="Produto 3" />
+                    <img className='zoom' src="https://imgur.com/2XbgVHh.png" alt="Produto 3" />
+                    
             </Link>
     </div>
   )
