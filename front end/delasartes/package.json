@@ -21,9 +21,13 @@
     "@types/react-router-dom": "5.1.8",
     "@types/redux": "3.6.0",
     "axios": "0.21.4",
+<<<<<<< HEAD
     "bootstrap": "5.1.3",
+=======
+    "bootstrap": "^5.1.3",
+>>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
     "react": "^17.0.2",
-    "react-bootstrap": "^2.0.3",
+    "react-bootstrap": "^2.1.2",
     "react-dom": "^17.0.2",
     "react-elastic-carousel": "^0.11.5",
     "react-redux": "7.2.5",

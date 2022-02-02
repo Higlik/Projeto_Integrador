@@ -14,7 +14,7 @@ function Navbar() {
             
             <div className="displayNavBar backgroundNavBar">
 
-                <Link to='./home' className="text-decoration-none">
+                <Link to='/home' className="text-decoration-none">
                     <Box  >
                         <Typography variant="h5">
                            <a href="/home"> <h1 className="logoDA" >delasArtes</h1>  </a> 
@@ -23,6 +23,7 @@ function Navbar() {
                 </Link>
 
                 <Box className="fontnavbar displayitens">
+<<<<<<< HEAD
                     <Link to='./sobre' className="text-decocartor-none">
                         <Box mx={1} className="cursor">
                             <Typography variant="h6" className="FontNavbar">
@@ -39,23 +40,32 @@ function Navbar() {
                         </Box>
                     </Link>
 
+=======
+>>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
                     <Link to='/produtos' className='text-decorator-none'>
                         <Box mx={1} className="cursor" >
                             <Typography variant="h6" className="LgLoginNavBar">
                                 <Box className="displayarrow">
-                                <p>Produtos</p>
-                                <KeyboardArrowDownIcon />
+                                <p>Obras</p>
+                                <KeyboardArrowDownIcon className="mgarrow" />
                                 </Box>
                             </Typography>
                         </Box>
                     </Link>
-                    <Link to='./categorias' className="text-decoration-none">
+                    <Link to='/categorias' className="text-decoration-none">
                         <Box mx={1} className="cursor">
                             <Typography variant="h6" className="FontNavbar">
                             <Box className="displayarrow">
                                 <p>Categorias</p>
-                                <KeyboardArrowDownIcon />
+                                <KeyboardArrowDownIcon className="mgarrow" />
                                 </Box>
+                            </Typography>
+                        </Box>
+                    </Link>
+                    <Link to='/sobre' className="text-decocartor-none">
+                        <Box mx={1} className="cursor">
+                            <Typography variant="h6" className="FontNavbar">
+                                <p>Sobre</p>
                             </Typography>
                         </Box>
                     </Link>

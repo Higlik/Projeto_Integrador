@@ -8,16 +8,23 @@ import Login from './paginas/login/Login';
 import './App.css';
 import Usuario from './paginas/usuario/Usuario';
 import ListarCategorias from './components/estaticos/categorias/listarCategorias/ListarCategorias';
+<<<<<<< HEAD
 import ListarProdutos from './components/estaticos/produtos/listarProdutos/listarProdutos';
 import CardProduto from './components/estaticos/produtos/cardProduto/CardProduto';
 import PaginaLogin from './paginas/paginaLogin/PaginaLogin';
+=======
+import ListarProdutos from './components/estaticos/produtos/listarProdutos/ListarProdutos';
+import CardProduto from './components/estaticos/produtos/cardProduto/CardProduto';
+import Sobre from './paginas/sobre/Sobre';
+import Contato from './paginas/contato/Contato';
+>>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
 
 
 function App() {
   return (
 
     <Router>
-   
+  
         <Switch>
           <div style={{minHeight: '100vh'}}>
 
@@ -29,7 +36,7 @@ function App() {
               <PaginaLogin />
             </Route>
 
-            <Route path='/home'>
+            <Route exact path='/home'>
               <Navbar />
               <Home />
             </Route>
@@ -54,6 +61,17 @@ function App() {
             <CardProduto />
             </Route>
 
+<<<<<<< HEAD
+=======
+            <Route path='/sobre'>
+            <Sobre />
+            </Route>
+
+            <Route path='/contato'>
+            <Contato />
+            </Route>
+
+>>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
           </div>
         </Switch>
       <Footer />
