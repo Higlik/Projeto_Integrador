@@ -9,6 +9,7 @@ import './App.css';
 import Usuario from './paginas/usuario/Usuario';
 import ListarCategorias from './components/estaticos/categorias/listarCategorias/ListarCategorias';
 import ListarProdutos from './components/estaticos/produtos/listarProdutos/ListarProdutos';
+import CardProduto from './components/estaticos/produtos/cardProduto/CardProduto';
 
 
 function App() {
@@ -44,8 +45,12 @@ function App() {
               <ListarCategorias />
             </Route>
 
-            <Route path='/produto'>
+            <Route path='/produtos'>
               <ListarProdutos />
+            </Route>
+
+            <Route path='/produto/:id'>
+            <CardProduto />
             </Route>
 
           </div>
