@@ -17,7 +17,7 @@ function Navbar() {
                 <Link to='./home' className="text-decoration-none">
                     <Box  >
                         <Typography variant="h5">
-                            <h1 className="logoDA" >delasArtes</h1>
+                           <a href="/home"> <h1 className="logoDA" >delasArtes</h1>  </a> 
                         </Typography>
                     </Box>
                 </Link>
@@ -39,7 +39,7 @@ function Navbar() {
                         </Box>
                     </Link>
 
-                    <Link to='/produto' className='text-decorator-none'>
+                    <Link to='/produtos' className='text-decorator-none'>
                         <Box mx={1} className="cursor" >
                             <Typography variant="h6" className="LgLoginNavBar">
                                 <Box className="displayarrow">

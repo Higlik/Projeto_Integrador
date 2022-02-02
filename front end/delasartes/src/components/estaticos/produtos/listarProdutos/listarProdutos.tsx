@@ -53,7 +53,7 @@ function ListarProdutos() {
                     <h1>{post.nome}</h1>
                   </Typography>
                   <Typography  >
-                    <p>R$ {post.valor}</p>
+                    <p> R&#36; {post.valor.toFixed(2)}</p>
                   </Typography>
                   <Typography  >
                     <p>{post.descricao}</p>

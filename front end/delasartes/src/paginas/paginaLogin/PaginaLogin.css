@@ -1,0 +1,21 @@
+.PgTopLogin{
+    margin-top: 5rem;
+}
+
+.border{
+    margin-right: 40px;
+    width: 90%;
+}
+
+.MarginLogin{
+    margin-right: 3rem;
+}
+
+.MarginCadastro{
+    flex-direction: end;
+}
+
+.PgLogin{
+   justify-content: left;
+   display: flex;
+}

@@ -1,7 +1,7 @@
 import React from 'react';
-import CadastroCategoria from '../../components/estaticos/categorias/cadastroCategoria/CadastroCategoria';
+import CadastroCategoria from '../../components/estaticos/categorias/cadastroCategoria/cadastroCategoria';
 import Navbar from '../../components/estaticos/navbar/Navbar';
-import ModalProduto from '../../components/estaticos/produtos/modalProduto/ModalProduto';
+import ModalProduto from '../../components/estaticos/produtos/modalProduto/modalProduto';
 import './Usuario.css'
 
 const Usuario = () => {

@@ -43,4 +43,4 @@ function CaroucelComponent() {
     )
 }
 
-export default CaroucelComponent
+export default CaroucelComponent;
