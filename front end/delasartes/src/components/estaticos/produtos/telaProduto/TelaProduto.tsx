@@ -12,7 +12,6 @@ const TelaProduto = () => {
     <div className='dist_'>
             <Link  to='/produto/6' className='text-decoration-none'>
             <img className='zoom img-relative' src="https://imgur.com/uWnupVN.png" alt="Produto 1" /> 
-                    <h2 className='text-absulute'>oi</h2>
                    
             </Link>
             <Link  to='/produto/7' className='text-decoration-none'>

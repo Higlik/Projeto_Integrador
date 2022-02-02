@@ -30,7 +30,7 @@ function App() {
               <Login />
             </Route>
 
-            <Route path='/home'>
+            <Route exact path='/home'>
               <Navbar />
               <Home />
             </Route>
@@ -51,7 +51,7 @@ function App() {
               <ListarProdutos />
             </Route>
 
-            <Route path='/produto/:id'>
+            <Route exact path='/produto/:id'>
             <CardProduto />
             </Route>
 

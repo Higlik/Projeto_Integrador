@@ -14,7 +14,7 @@ function Navbar() {
             
             <div className="displayNavBar backgroundNavBar">
 
-                <Link to='./home' className="text-decoration-none">
+                <Link to='/home' className="text-decoration-none">
                     <Box  >
                         <Typography variant="h5">
                             <h1 className="logoDA" >delasArtes</h1>
@@ -23,7 +23,7 @@ function Navbar() {
                 </Link>
 
                 <Box className="fontnavbar displayitens">
-                    <Link to='./sobre' className="text-decocartor-none">
+                    <Link to='/sobre' className="text-decocartor-none">
                         <Box mx={1} className="cursor">
                             <Typography variant="h6" className="FontNavbar">
                                 <p >Sobre</p>
@@ -44,17 +44,17 @@ function Navbar() {
                             <Typography variant="h6" className="LgLoginNavBar">
                                 <Box className="displayarrow">
                                 <p>Produtos</p>
-                                <KeyboardArrowDownIcon />
+                                <KeyboardArrowDownIcon className="mgarrow" />
                                 </Box>
                             </Typography>
                         </Box>
                     </Link>
-                    <Link to='./categorias' className="text-decoration-none">
+                    <Link to='/categorias' className="text-decoration-none">
                         <Box mx={1} className="cursor">
                             <Typography variant="h6" className="FontNavbar">
                             <Box className="displayarrow">
                                 <p>Categorias</p>
-                                <KeyboardArrowDownIcon />
+                                <KeyboardArrowDownIcon className="mgarrow" />
                                 </Box>
                             </Typography>
                         </Box>

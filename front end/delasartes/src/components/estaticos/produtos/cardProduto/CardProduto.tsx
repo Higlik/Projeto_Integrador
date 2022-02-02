@@ -53,6 +53,7 @@ const CardProduto = () => {
     })
 
     useEffect(() => {
+        window.scrollTo(0,0)
         setProduto({
             ...produto,
             categoria: categoria,
@@ -102,6 +103,8 @@ const CardProduto = () => {
         })
 
     }
+    
+
 
 
     return (

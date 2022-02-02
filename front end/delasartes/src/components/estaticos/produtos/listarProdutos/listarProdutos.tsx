@@ -33,7 +33,7 @@ function ListarProdutos() {
   }
 
   useEffect(() => {
-
+    window.scrollTo(0,0)
     getPost()
 
   }, [prodts.length])
