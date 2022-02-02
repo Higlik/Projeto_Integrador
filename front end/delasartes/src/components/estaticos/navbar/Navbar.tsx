@@ -31,7 +31,7 @@ function Navbar() {
                         </Box>
                     </Link>
 
-                    <Link to='/usuario' className="text-decocartor-none">
+                    <Link to='/contato' className="text-decocartor-none">
                         <Box mx={1} className="cursor">
                             <Typography variant="h6" className="FontNavbar">
                                 <p>Contato</p>

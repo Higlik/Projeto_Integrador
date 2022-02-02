@@ -44,7 +44,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-    align-items:baseline;
+    align-items:center;
     gap: 3px;
     margin-left: 0px;
 }
@@ -57,4 +57,9 @@
 .font p{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
+}
+
+.pgp{
+    padding-left: 60px;
+    padding-right: 30px;
 }

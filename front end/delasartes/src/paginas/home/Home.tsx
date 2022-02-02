@@ -9,7 +9,7 @@ const Home = () => {
    <img className='imgInicial' src="https://imgur.com/R1kPPuc.png" alt="Imagem Inicial" />
     <h1  className='fontTitulo mg_titulo'>ARTE + ARTESANATO + ESCULTURAS + MUITO MAIS!</h1>
     <div className='border'></div>
-    <h3 className='titulos'>ARTISTAS QUE VOCÊ PRECISA CONHECER</h3>
+    <h3 className='titulos'>PINTURAS</h3>
     <TelaProduto/>
     <h3 className='titulos'>ARTESANATO</h3>
     <div className='imgartesanato'>

@@ -3,5 +3,26 @@
 }
 
 .pg-top{
-    padding-top: 5rem;
+    padding-top: 7rem;
+}
+
+.categoriatm{
+    width: 450px;
+    height: 560px;
+}
+
+.displaycategoria{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.absolute{
+    position: absolute;
+    margin-bottom: 4rem;
+}
+
+.cursor{
+    cursor: pointer;
 }

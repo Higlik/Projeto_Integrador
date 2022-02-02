@@ -10,6 +10,8 @@ import Usuario from './paginas/usuario/Usuario';
 import ListarCategorias from './components/estaticos/categorias/listarCategorias/ListarCategorias';
 import ListarProdutos from './components/estaticos/produtos/listarProdutos/ListarProdutos';
 import CardProduto from './components/estaticos/produtos/cardProduto/CardProduto';
+import Sobre from './paginas/sobre/Sobre';
+import Contato from './paginas/contato/Contato';
 
 
 function App() {
@@ -51,6 +53,14 @@ function App() {
 
             <Route path='/produto/:id'>
             <CardProduto />
+            </Route>
+
+            <Route path='/sobre'>
+            <Sobre />
+            </Route>
+
+            <Route path='/contato'>
+            <Contato />
             </Route>
 
           </div>
