@@ -18,7 +18,7 @@ function App() {
   return (
 
     <Router>
-   
+  
         <Switch>
           <div style={{minHeight: '100vh'}}>
 
@@ -51,7 +51,7 @@ function App() {
               <ListarProdutos />
             </Route>
 
-            <Route exact path='/produto/:id'>
+            <Route path='/produto/:id'>
             <CardProduto />
             </Route>
 

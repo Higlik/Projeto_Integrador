@@ -23,27 +23,11 @@ function Navbar() {
                 </Link>
 
                 <Box className="fontnavbar displayitens">
-                    <Link to='/sobre' className="text-decocartor-none">
-                        <Box mx={1} className="cursor">
-                            <Typography variant="h6" className="FontNavbar">
-                                <p >Sobre</p>
-                            </Typography>
-                        </Box>
-                    </Link>
-
-                    <Link to='/contato' className="text-decocartor-none">
-                        <Box mx={1} className="cursor">
-                            <Typography variant="h6" className="FontNavbar">
-                                <p>Contato</p>
-                            </Typography>
-                        </Box>
-                    </Link>
-
                     <Link to='/produtos' className='text-decorator-none'>
                         <Box mx={1} className="cursor" >
                             <Typography variant="h6" className="LgLoginNavBar">
                                 <Box className="displayarrow">
-                                <p>Produtos</p>
+                                <p>Obras</p>
                                 <KeyboardArrowDownIcon className="mgarrow" />
                                 </Box>
                             </Typography>
@@ -56,6 +40,13 @@ function Navbar() {
                                 <p>Categorias</p>
                                 <KeyboardArrowDownIcon className="mgarrow" />
                                 </Box>
+                            </Typography>
+                        </Box>
+                    </Link>
+                    <Link to='/sobre' className="text-decocartor-none">
+                        <Box mx={1} className="cursor">
+                            <Typography variant="h6" className="FontNavbar">
+                                <p>Sobre</p>
                             </Typography>
                         </Box>
                     </Link>
