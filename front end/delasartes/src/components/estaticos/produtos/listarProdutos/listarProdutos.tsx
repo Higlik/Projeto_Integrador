@@ -45,7 +45,9 @@ function ListarProdutos() {
       <Box className='display'>
         {
           prodts.map(post => (
+            
             <Box m={2} >
+              <Link to={`/produto/${post.id}`} className="text-decorator-none">
               <Card className='cardbackground displaycard'>
                 <img className='cardmedia' src={post.foto} alt="" />
                 <div className='displaytext font'>
@@ -53,15 +55,18 @@ function ListarProdutos() {
                     <h1>{post.nome}</h1>
                   </Typography>
                   <Typography  >
-                    <p>R$ {post.valor}</p>
+                    <p> R&#36; {post.valor.toFixed(2)}</p>
                   </Typography>
                   <Typography  >
-                    <p>{post.descricao}</p>
+                    <p className='pgp'>{post.descricao}</p>
                   </Typography>
 
                 </div>
 
               </Card>
+              
+              </Link>
+            
 
             </Box>
           ))

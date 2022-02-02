@@ -8,8 +8,15 @@ import Login from './paginas/login/Login';
 import './App.css';
 import Usuario from './paginas/usuario/Usuario';
 import ListarCategorias from './components/estaticos/categorias/listarCategorias/ListarCategorias';
+<<<<<<< HEAD
 import ListarProdutos from './components/estaticos/produtos/listarProdutos/listarProdutos';
 import Sobre from './paginas/sobre/Sobre';
+=======
+import ListarProdutos from './components/estaticos/produtos/listarProdutos/ListarProdutos';
+import CardProduto from './components/estaticos/produtos/cardProduto/CardProduto';
+import Sobre from './paginas/sobre/Sobre';
+import Contato from './paginas/contato/Contato';
+>>>>>>> b5fd5bb6326044f52e0b01843ca5c1723ea8a13b
 
 
 function App() {
@@ -45,12 +52,25 @@ function App() {
               <ListarCategorias />
             </Route>
 
-            <Route path='/produto'>
+            <Route path='/produtos'>
               <ListarProdutos />
             </Route>
 
+<<<<<<< HEAD
             <Route path='/sobre'>
               <Sobre />
+=======
+            <Route path='/produto/:id'>
+            <CardProduto />
+            </Route>
+
+            <Route path='/sobre'>
+            <Sobre />
+            </Route>
+
+            <Route path='/contato'>
+            <Contato />
+>>>>>>> b5fd5bb6326044f52e0b01843ca5c1723ea8a13b
             </Route>
 
           </div>

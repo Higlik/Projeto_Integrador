@@ -1,3 +1,4 @@
+
 import { Box, Card, Grid, Typography } from '@mui/material';
 import React from 'react'
 import { Nav } from 'react-bootstrap';
@@ -96,6 +97,7 @@ function Sobre() {
 }
 
 export default Sobre;
+
 
 
 

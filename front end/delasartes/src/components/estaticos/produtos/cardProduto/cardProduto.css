@@ -1,0 +1,79 @@
+.pgcard-top{
+    padding-top: 9rem;
+}
+
+.displaycardprod{
+    background-color: #1F1F1F !important;
+    width: 1100px;
+    height: 780px;
+    margin-left: 13rem;
+}
+
+.titulocard{
+    font-family: var(--bebas-neue);
+    color: white;
+    font-size: 60px;
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.display2cardprod{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.Imgcardprod{
+    width: 810px;
+    height: 690px;
+}
+
+.displaytextcard{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+
+}
+
+.titulo2card{
+    font-family: var(--poppins);
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.textcard{
+    font-family: var(--poppins);
+    font-size: 15px;
+    font-weight: 700;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.bordercard{
+    border: 1px solid #FFFFFF;
+    width: 250px;
+    margin: 30px;
+}
+
+.precocard{
+    font-family: var(--poppins);
+    font-weight: 700;
+    font-size: 40px;
+    margin-top: 15rem;
+}
+
+.botaocard{
+    background: #6031BA;
+    border: none;
+    font-family: var(--bebas-neue);
+    width: 214px;
+    height: 50px;
+    font-size: 23px;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+}

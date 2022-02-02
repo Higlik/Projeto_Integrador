@@ -9,8 +9,7 @@
 }
 
 .img-relative{
-    position: relative;
-    text-align: center;
+    position: static;
 }
 
 .display{
@@ -43,6 +42,7 @@
 
   .zoom:hover {
     transform:  translate(3%, -3%) scale(1.1);
+    position:inherit
   }
 
   .bottom-lef{
@@ -50,3 +50,4 @@
     bottom: 8px;
     left: 16px;
   }
+  
