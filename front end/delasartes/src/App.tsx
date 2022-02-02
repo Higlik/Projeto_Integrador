@@ -8,14 +8,15 @@ import Login from './paginas/login/Login';
 import './App.css';
 import Usuario from './paginas/usuario/Usuario';
 import ListarCategorias from './components/estaticos/categorias/listarCategorias/ListarCategorias';
-import ListarProdutos from './components/estaticos/produtos/listarProdutos/ListarProdutos';
+import ListarProdutos from './components/estaticos/produtos/listarProdutos/listarProdutos';
+import Sobre from './paginas/sobre/Sobre';
 
 
 function App() {
   return (
 
     <Router>
-   
+  
         <Switch>
           <div style={{minHeight: '100vh'}}>
 
@@ -46,6 +47,10 @@ function App() {
 
             <Route path='/produto'>
               <ListarProdutos />
+            </Route>
+
+            <Route path='/sobre'>
+              <Sobre />
             </Route>
 
           </div>

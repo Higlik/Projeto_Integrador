@@ -1,0 +1,73 @@
+
+.imgSobre{
+    padding-top: 4.4rem;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.caixa{
+    padding-top: 9rem;
+}
+
+.tituloSobre{
+font-family: 'Bebas Neue';
+font-style: normal;
+font-weight: normal;
+padding-left: 150px;
+padding-right: 150px;
+padding-top: 50px;
+font-size: 55px ;
+line-height: 66px; 
+color: white
+}
+
+.textoSobre{
+font-family: 'Poppins', sans-serif;
+font-style: normal;
+font-weight: bold;
+padding-left: 150px;
+padding-right: 150px;
+padding-top: 5px;
+font-size: 28px !important;
+line-height: 42px;
+color: #FFFFFF;
+}
+
+.displaySobre{
+    padding-top: 1rem;
+    padding-left: 7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.cardbackgroundSobre{
+    background-color: #1F1F1F !important;
+    width: 260px;
+    height: 360px;
+    border: none;
+}
+
+.cardmediaSobre{
+    width: 180px;
+    height: 170px;
+    margin-top: 38px;
+    margin-bottom: 18px;
+}
+
+.displaycardSobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.displaytextSobre{
+    
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    gap: 3px;
+    margin-left: 0px;
+}
