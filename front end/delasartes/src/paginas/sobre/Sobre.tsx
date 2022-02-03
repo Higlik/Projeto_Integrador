@@ -19,9 +19,10 @@ function Sobre() {
             <Navbar />
             <img className='imgSobre' src="https://imgur.com/DN4SB18.png" alt="Imagem Inicial" />
             <h2 className='tituloSobre'>Sobre nós</h2>
-            <h3 className='textoSobre'>.</h3>
+            <h3 className='textoSobre'>Somos uma instituição com intuito de auxiliar mulheres artistas, inclusas nas classes baixas da sociedade, a promover seu trabalho no nosso Marketplace, enaltecendo a igualdade de gênero com lucros justos e oportunidades de crescimento no ramo artístico. 
+            Todas as artistas podem utilizar a plataforma para divulgar suas obras e qualquer pessoa pode adquiri-las.</h3>
             <h2 className='tituloSobre'>Um novo conceito de galeria</h2>
-            <h3 className='textoSobre'>Libero tortor, et sit arcu platea faucibus. Eget vitae vestibulum sed dignissim phasellus sed. Diam velit ac ornare proin euismod in.</h3>
+            <h3 className='textoSobre'>A galeria possue filtragem por suas categorias e nossas artistas, também podendo ser utilizado nossa plataforma de feed de noticias, onde pode receber conteudos postados pelas artistas sobre futuras obras e desenvolvimento delas.</h3>
             <h2 className='tituloSobre'>Our Dev Team</h2>
             <Box className='displaySobre'>
                 <Card className='cardbackgroundSobre displaycardSobre'>
