@@ -46,3 +46,12 @@
    width: 320px;
    height: 320px;
 }
+
+.zoom{
+    transition: transform .3s;
+}
+
+.zoom:hover{
+    filter: brightness(120%);
+    transform: translate(-1%, 1%) scale(1.1);
+}
