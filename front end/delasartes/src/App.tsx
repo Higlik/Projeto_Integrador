@@ -7,6 +7,7 @@ import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
 import './App.css';
 import Usuario from './paginas/usuario/Usuario';
+<<<<<<< HEAD
 import ListarCategorias from './components/categorias/listarCategorias/ListarCategorias';
 import ListarProdutos from './components/produtos/listarProdutos/ListarProduto';
 import CardProduto from './components/produtos/cardProduto/CardProduto';
@@ -16,6 +17,19 @@ import ModalProduto from './components/produtos/modalProduto/ModalProduto';
 import CadastroProdutos from './components/produtos/cadastroProduto/CadastroProduto';
 import DeletaProduto from './components/produtos/deletaProduto/DeletaProduto';
 
+=======
+import ListarCategorias from './components/estaticos/categorias/listarCategorias/ListarCategorias';
+<<<<<<< HEAD
+import ListarProdutos from './components/estaticos/produtos/listarProdutos/listarProdutos';
+import CardProduto from './components/estaticos/produtos/cardProduto/CardProduto';
+import PaginaLogin from './paginas/paginaLogin/PaginaLogin';
+=======
+import ListarProdutos from './components/estaticos/produtos/listarProdutos/ListarProdutos';
+import CardProduto from './components/estaticos/produtos/cardProduto/CardProduto';
+import Sobre from './paginas/sobre/Sobre';
+import Contato from './paginas/contato/Contato';
+>>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
+>>>>>>> 175d2a214eed4acdb2f17dfaa68d46898a9d665b
 
 
 function App() {
@@ -31,7 +45,7 @@ function App() {
             </Route>
 
             <Route path='/login'>
-              <Login />
+              <PaginaLogin />
             </Route>
 
             <Route exact path='/home'>
@@ -61,6 +75,8 @@ function App() {
             <CardProduto />
             </Route>
 
+<<<<<<< HEAD
+=======
             <Route path='/sobre'>
             <Sobre />
             </Route>
@@ -69,6 +85,7 @@ function App() {
             <Contato />
             </Route>
 
+<<<<<<< HEAD
             <Route path='/cadastroproduto'>
             <CadastroProdutos />
             </Route>
@@ -77,6 +94,9 @@ function App() {
             <DeletaProduto />
             </Route>
 
+=======
+>>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
+>>>>>>> 175d2a214eed4acdb2f17dfaa68d46898a9d665b
           </div>
         </Switch>
       <Footer />

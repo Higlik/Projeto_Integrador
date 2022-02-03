@@ -1,8 +1,8 @@
+
 import { Button, FormControl, FormHelperText, InputLabel, MenuItem, Select, TextField } from '@mui/material';
 import React, { ChangeEvent, useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
-
 import CadastroCategoria from '../../components/categorias/cadastroCategoria/CadastroCategoria';
 import Navbar from '../../components/estaticos/navbar/Navbar';
 import ModalProduto from '../../components/produtos/modalProduto/ModalProduto';

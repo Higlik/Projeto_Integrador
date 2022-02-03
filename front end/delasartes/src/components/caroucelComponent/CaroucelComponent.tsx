@@ -40,4 +40,8 @@ function CarouselComponent() {
   )
 }
 
+<<<<<<< HEAD
+export default CaroucelComponent;
+=======
 export default CarouselComponent
+>>>>>>> 32d783894370cab4503d10ef55239ec0377c6314

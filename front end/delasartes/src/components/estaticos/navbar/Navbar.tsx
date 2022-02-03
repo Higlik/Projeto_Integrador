@@ -18,12 +18,31 @@ function Navbar() {
                 <Link to='/home' className="text-decoration-none">
                     <Box  >
                         <Typography variant="h5">
-                            <h1 className="logoDA" >delasArtes</h1>
+                           <a href="/home"> <h1 className="logoDA" >delasArtes</h1>  </a> 
                         </Typography>
                     </Box>
                 </Link>
 
                 <Box className="fontnavbar displayitens">
+<<<<<<< HEAD
+                    <Link to='./sobre' className="text-decocartor-none">
+                        <Box mx={1} className="cursor">
+                            <Typography variant="h6" className="FontNavbar">
+                                <p >Sobre</p>
+                            </Typography>
+                        </Box>
+                    </Link>
+
+                    <Link to='/usuario' className="text-decocartor-none">
+                        <Box mx={1} className="cursor">
+                            <Typography variant="h6" className="FontNavbar">
+                                <p>Contato</p>
+                            </Typography>
+                        </Box>
+                    </Link>
+
+=======
+>>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
                     <Link to='/produtos' className='text-decorator-none'>
                         <Box mx={1} className="cursor" >
                             <Typography variant="h6" className="LgLoginNavBar">

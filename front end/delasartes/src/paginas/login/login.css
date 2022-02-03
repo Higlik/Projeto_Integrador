@@ -9,3 +9,11 @@
 .textos1{
     font-weight: bold !important;
  }
+
+ .ButtonBGcolor{
+     background-color: black !important;
+ }
+
+ .textfieldwd{
+     width: 325px;
+ }
