@@ -5,8 +5,7 @@ import Produto from '../../../models/Produto';
 import useLocalStorage from 'react-use-localstorage';
 import Categoria from '../../../models/Categorias';
 import { busca, buscaId, post, put } from '../../../services/Service';
-import Navbar from '../../estaticos/navbar/Navbar'
-
+import './CadastroProduto.css'
 
 function CadastroProduto() {
   let history = useHistory();
@@ -53,7 +52,7 @@ function CadastroProduto() {
   }, [id])
 
   async function getCategorias() {
-    await busca("/categorias", setCategoria, {
+    await busca("/categorias", setCategorias, {
       headers: {
         'Authorization': token
       }
@@ -105,20 +104,19 @@ function CadastroProduto() {
   }
 
   function back() {
-    history.push('/produto')
+    history.push('/produtos')
   }
 
   return (
     <>
-      <Navbar />
-      <Container maxWidth="sm" className="topo">
+      <Container className='modalbackground'>
         <form onSubmit={onSubmit}>
-          <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro de Produto</Typography>
-          <TextField value={produto.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="nome" label="nome" variant="outlined" name="nome" margin="normal" fullWidth />
-          <TextField value={produto.valor} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="valor" label="valor" name="valor" variant="outlined" margin="normal" fullWidth />
-          <TextField value={produto.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="descricao" label="descricao" name="descricao" variant="outlined" margin="normal" fullWidth />
-          <TextField value={produto.quantidade} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="quantidade" label="quantidade" name="quantidade" variant="outlined" margin="normal" fullWidth />
-          <TextField value={produto.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="foto" label="foto" name="foto" variant="outlined" margin="normal" fullWidth />
+          <h1 >Formulário de cadastro de Produto</h1>
+          <TextField className='textfieldbackground' value={produto.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="nome" label="nome" variant="outlined" name="nome" margin="normal" fullWidth />
+          <TextField className='textfieldbackground' value={produto.valor} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="valor" label="valor" name="valor" variant="outlined" margin="normal" fullWidth />
+          <TextField className='textfieldbackground' value={produto.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="descricao" label="descricao" name="descricao" variant="outlined" margin="normal" fullWidth />
+          <TextField className='textfieldbackground' value={produto.quantidade} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="quantidade" label="quantidade" name="quantidade" variant="outlined" margin="normal" fullWidth />
+          <TextField className='textfieldbackground' value={produto.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="foto" label="foto" name="foto" variant="outlined" margin="normal" fullWidth />
           <FormControl >
             <InputLabel id="demo-simple-select-helper-label">Categoria </InputLabel>
             <Select
@@ -131,7 +129,7 @@ function CadastroProduto() {
               })}>
               {
                 categorias.map(categoria => (
-                  <MenuItem value={categoria.id}>{categoria.descricao}</MenuItem>
+                  <MenuItem value={categoria.id}>{categoria.genero}</MenuItem>
                 ))
               }
             </Select>
@@ -141,7 +139,7 @@ function CadastroProduto() {
             </Button>
           </FormControl>
         </form>
-      </Container>
+      </Container >
 
     </>
 

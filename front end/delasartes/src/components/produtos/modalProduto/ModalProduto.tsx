@@ -1,18 +1,18 @@
-
-import React from 'react'
+import React from 'react';
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
-import {Button,Box } from "@material-ui/core"
-import CloseIcon from '@material-ui/icons/Close';
-import './modalProduto.css';
 import CadastroProduto from '../cadastroProduto/CadastroProduto';
+import AddBoxIcon from '@mui/icons-material/AddBox';
+import { Card } from 'react-bootstrap';
+import './ModalProduto.css'
 
-
+function rand() {
+  return Math.round(Math.random() * 20) - 10;
+}
 
 function getModalStyle() {
-  const top = 50 ;
-  const left = 50;
-  
+  const top = 50 + rand();
+  const left = 50 + rand();
 
   return {
     top: `${top}%`,
@@ -26,16 +26,15 @@ const useStyles = makeStyles((theme: Theme) =>
     paper: {
       position: 'absolute',
       width: 400,
-      backgroundColor: theme.palette.background.paper,
-      border: '2px solid #000',
-      boxShadow: theme.shadows[5],
+
       padding: theme.spacing(2, 4, 3),
     },
   }),
 );
 
-function ModalProduto () {
+export default function SimpleModal() {
   const classes = useStyles();
+  // getModalStyle is not a pure function, we roll the style only on the first render
   const [modalStyle] = React.useState(getModalStyle);
   const [open, setOpen] = React.useState(false);
 
@@ -49,23 +48,19 @@ function ModalProduto () {
 
   const body = (
     
-    <div style={modalStyle} className={classes.paper}>
-      <Box display="flex" justifyContent="flex-end" className="cursor">
-        <CloseIcon onClick={handleClose}/>
-      
-      </Box>
-      
+    
       <CadastroProduto/>
-      
-    </div>
+  
+   
+    
+   
   );
 
   return (
     <div>
-      <Button
-        variant="outlined"
-        className="btnModal"
-        onClick={handleOpen}>Cadastrar Produto</Button>
+      <a onClick={handleOpen}>
+      <AddBoxIcon className="tamanhoicones"/>
+      </a>
       <Modal
         open={open}
         onClose={handleClose}
@@ -77,6 +72,3 @@ function ModalProduto () {
     </div>
   );
 }
-
-
-export default ModalProduto;

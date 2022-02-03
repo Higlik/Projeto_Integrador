@@ -18,10 +18,6 @@ import DeletaProduto from './components/produtos/deletaProduto/DeletaProduto';
 import PaginaLogin from './paginas/paginaLogin/PaginaLogin';
 
 
-
-
-
-
 function App() {
   return (
 
@@ -74,10 +70,7 @@ function App() {
             </Route>
 
 
-            <Route path='/cadastroproduto'>
-            <CadastroProdutos />
-            </Route>
-
+         
             <Route path='/deletarPostagem/:id'>
             <DeletaProduto />
             </Route>

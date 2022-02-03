@@ -1,0 +1,13 @@
+.modalbackground{
+    display: flex;
+    flex-direction: column;
+    background-color: #1F1F1F;
+    width: 786px;
+    height: 898px;
+}
+
+.textfieldbackground{
+    background-color:rgba(107, 54, 207, 0.3);
+    width: 464px !important;
+    height: 59px !important;
+}

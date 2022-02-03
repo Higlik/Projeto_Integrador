@@ -4,7 +4,7 @@
 
 .prodtitulo{
     font-family: 'Bebas Neue', cursive;
-    margin-top: 9rem;
+    margin-top: 7rem;
     padding-left: 8rem;
     font-size: 60px;
     color: white;
@@ -15,6 +15,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
     
 }
 
