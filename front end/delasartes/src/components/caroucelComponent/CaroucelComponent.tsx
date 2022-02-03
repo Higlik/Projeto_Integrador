@@ -31,6 +31,13 @@ function CarouselComponent() {
       alt="Third slide"
     />
   </Carousel.Item>
+  <Carousel.Item className='pgcarousel'>
+    <img
+      className="imgcarousel3"
+      src="https://imgur.com/HnnPsH5.png"
+      alt="Third slide"
+    />
+  </Carousel.Item>
 </Carousel>
 
 
@@ -40,8 +47,6 @@ function CarouselComponent() {
   )
 }
 
-<<<<<<< HEAD
-export default CaroucelComponent;
-=======
-export default CarouselComponent
->>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
+
+export default CarouselComponent;
+

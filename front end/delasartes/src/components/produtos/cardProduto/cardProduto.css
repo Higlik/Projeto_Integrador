@@ -1,13 +1,11 @@
 .pgcard-top{
-    padding-top: 9rem;
+    padding-top: 6rem;
 }
 
-<<<<<<< HEAD
-=======
 .displaycardprod{
     background-color: #1F1F1F !important;
     width: 1100px;
-    height: 780px;
+    height: 600px;
     margin-left: 13rem;
 }
 
@@ -29,7 +27,7 @@
 
 .Imgcardprod{
     width: 810px;
-    height: 690px;
+    height:487px;
 }
 
 .displaytextcard{
@@ -49,7 +47,7 @@
 
 .textcard{
     font-family: var(--poppins);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 700;
     padding-left: 30px;
     padding-right: 30px;
@@ -61,11 +59,11 @@
     margin: 30px;
 }
 
-.precocard{
+.preco{
     font-family: var(--poppins);
     font-weight: 700;
-    font-size: 40px;
-    margin-top: 15rem;
+    font-size: 32px;
+    margin-top: 2rem;
 }
 
 .botaocard{
@@ -79,4 +77,4 @@
     cursor: pointer;
     margin: 20px;
 }
->>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
+

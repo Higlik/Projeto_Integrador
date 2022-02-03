@@ -5,7 +5,7 @@ import Modal from '@material-ui/core/Modal';
 import {Button,Box } from "@material-ui/core"
 import CloseIcon from '@material-ui/icons/Close';
 import './modalProduto.css';
-import CadastroProduto from '../cadastroProduto/cadastroProduto';
+import CadastroProduto from '../cadastroProduto/CadastroProduto';
 
 
 
