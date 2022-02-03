@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 .box1{
-    background-color: black;
-}
-.box2{
-background-color: #303F9F;
-height: 60px;
+    margin-top: 20rem;
 }
 
 .redes{
     font-size: 60px !important;
-    color: white;
+    color: black;
 }
 
 .text{
-    color: white;
+    color: black;
+}
+
+.colorlogo{
+    color:#6B36CF;
+    font-family: var(--font-family) !important;
+    font-size: 60px !important;
 }

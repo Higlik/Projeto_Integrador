@@ -17,7 +17,7 @@ function Sobre() {
     return (
         <>
                 <Navbar />
-                <img className='imgSobre' src="https://i.imgur.com/6Bbq1mz.png" alt="Imagem Inicial" />
+                <img className='imgSobre' src="https://imgur.com/DN4SB18.png" alt="Imagem Inicial" />
                 <h2 className='tituloSobre'>Sobre nós</h2>
                 <h3 className='textoSobre'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim, curabitur cursus cursus fermentum quis. Amet semper mi dignissim vitae tristique posuere quis volutpat. Pellentesque netus diam in morbi. Dolor nunc libero tortor, et sit arcu platea faucibus. Eget vitae vestibulum sed dignissim phasellus sed. Diam velit ac ornare proin euismod in. Vitae at etiam egestas pharetra accumsan id nunc. Velit lectus netus sit ornare vitae tellus sit. Orci volutpat ultricies volutpat diam pellentesque eu adipiscing eget augue.</h3>
                 <h2 className='tituloSobre'>Um novo conceito de galeria</h2>
