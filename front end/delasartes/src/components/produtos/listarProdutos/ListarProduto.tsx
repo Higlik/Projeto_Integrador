@@ -14,22 +14,13 @@ import './ListarProduto.css';
 
 function ListarProduto() {
   const [prod, setProdts] = useState<Produto[]>([])
-  const [token, setToken] = useLocalStorage('token');
+  
   let history = useHistory();
 
-  useEffect(() => {
-    if (token == "") {
-      alert("Você precisa estar logado")
-      history.push("/login")
-
-    }
-  }, [token])
+ 
 
   async function getPost() {
     await busca("/produto", setProdts, {
-      headers: {
-        'Authorization': token
-      }
     })
   }
 

@@ -104,5 +104,6 @@ color: #FFFFFF;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding-left: 3rem;
+    padding-left: 2.5rem;
+    padding-top: 8px;
 }

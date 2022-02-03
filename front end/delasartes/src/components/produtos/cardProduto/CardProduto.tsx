@@ -16,15 +16,8 @@ const CardProduto = () => {
     let history = useHistory();
     const { id } = useParams<{ id: string }>();
     const [categorias, setCategorias] = useState<Categorias[]>([]);
-    const [token, setToken] = useLocalStorage('token');
 
-    useEffect(() => {
-        if (token == "") {
-            alert("Você precisa estar logado")
-            history.push("/login")
-
-        }
-    }, [token])
+  
 
     const [categoria, setCategoria] = useState<Categorias>(
         {
@@ -59,17 +52,13 @@ const CardProduto = () => {
 
     async function getCategorias() {
         await busca("/categorias", setCategorias, {
-            headers: {
-                'Authorization': token
-            }
+       
         })
     }
 
     async function findByIdProduto(id: string) {
         await buscaId(`produto/${id}`, setProduto, {
-            headers: {
-                'Authorization': token
-            }
+        
         })
     }
 

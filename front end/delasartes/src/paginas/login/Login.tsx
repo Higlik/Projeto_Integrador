@@ -55,7 +55,7 @@ function Login() {
                         <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' className="textfieldwd" />
                         <Box marginTop={2}>
                             <Button type='submit' variant='contained' className='ButtonBGcolor'>
-                                <p>Entrar</p> 
+                                <p className='buttonlogintext'>Entrar</p> 
                             </Button>
                         </Box>
                     </form>

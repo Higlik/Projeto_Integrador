@@ -1,12 +1,14 @@
 .PgTopLogin{
-    margin-top: 5rem;
+    margin-top: 7rem;
 }
 
 .border{
     margin-right: 40px;
     width: 90%;
 }
-
+.mg_titulo{
+    margin-bottom: 2rem;
+}
 .MarginLogin{
     margin-right: 3rem;
 }
