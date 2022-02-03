@@ -27,7 +27,7 @@ function Sobre() {
             <Box className='displaySobre'>
                 <Card className='cardbackgroundSobre displaycardSobre'>
                     <img className='cardmediaSobre' src="" alt="" />
-                    <div className='displaytextSobre devteamtext'>
+                    <div className='displaytextSobre devteamtext pgrightp'>
                         <div>
                             <h1>Giulia Galbiati</h1>
                             <p>Dev Full Stack</p>
@@ -41,12 +41,11 @@ function Sobre() {
                 </Card>
                 <Card className='cardbackgroundSobre displaycardSobre'>
                     <img className='cardmediaSobre' src="https://i.imgur.com/HjVEvo7.jpg" alt="" />
-                    <div className='displaytextSobre devteamtext'>
+                    <div className='displaytextSobre devteamtext pgrightp'>
                         <div>
                             <h1>Guilherme Rivas</h1>
                             <p>Dev Full Stack</p>
-                            <h2>sobre</h2>
-
+                            <h2>Desenvolvedor FullStack Jr com grande curiosidade em tudo que envolve tecnologia, com maior interesse em Análise de Dados e Big Data, disposto a aprender e encarar novos desafios.</h2>
                         </div>
                         <div className='iconessobre'>
                             <a href="https://www.linkedin.com/in/guilherme-rivas/" target='_blank'><img src="https://imgur.com/Ky865S6.png" alt="" /></a>
@@ -74,7 +73,7 @@ function Sobre() {
                 </Card>
                 <Card className='cardbackgroundSobre displaycardSobre'>
                     <img className='cardmediaSobre' src="https://i.imgur.com/1raX63n.jpg" alt="" />
-                    <div className='displaytextSobre devteamtext'>
+                    <div className='displaytextSobre devteamtext pgrightp'>
                         <div>
                             <h1>Victor França</h1>
                             <p>Dev Full Stack</p>
