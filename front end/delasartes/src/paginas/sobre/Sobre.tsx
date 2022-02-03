@@ -17,7 +17,7 @@ function Sobre() {
     return (
         <>
             <Navbar />
-            <img className='imgSobre' src="https://imgur.com/DN4SB18.png" alt="Imagem Inicial" />
+             <img className='imgSobre' src="https://imgur.com/DN4SB18.png" alt="Imagem Inicial" />
             <h2 className='tituloSobre'>Sobre nós</h2>
             <h3 className='textoSobre'>Somos uma instituição com intuito de auxiliar mulheres artistas, inclusas nas classes baixas da sociedade, a promover seu trabalho no nosso Marketplace, enaltecendo a igualdade de gênero com lucros justos e oportunidades de crescimento no ramo artístico. 
             Todas as artistas podem utilizar a plataforma para divulgar suas obras e qualquer pessoa pode adquiri-las.</h3>
