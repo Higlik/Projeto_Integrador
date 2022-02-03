@@ -21,11 +21,7 @@ const CardProduto = () => {
     const [usuario, setUsuario] = useState<User[]>([]);
 
     useEffect(() => {
-        if (token == "") {
-            alert("Você precisa estar logado")
-            history.push("/login")
-
-        }
+      
     }, [token])
 
     const [categoria, setCategoria] = useState<Categorias>(

@@ -12,6 +12,8 @@ import ListarProdutos from './components/estaticos/produtos/listarProdutos/Lista
 import CardProduto from './components/estaticos/produtos/cardProduto/CardProduto';
 import Sobre from './paginas/sobre/Sobre';
 import Contato from './paginas/contato/Contato';
+import ModalProduto from './components/estaticos/produtos/modalProduto/ModalProduto';
+import CadastroProdutos from './components/estaticos/produtos/cadastroProduto/CadastroProduto';
 
 
 function App() {
@@ -61,6 +63,10 @@ function App() {
 
             <Route path='/contato'>
             <Contato />
+            </Route>
+
+            <Route path='/cadastroproduto'>
+            <CadastroProdutos />
             </Route>
 
           </div>

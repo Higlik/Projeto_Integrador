@@ -2,13 +2,14 @@ import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import { useState } from 'react'
 import Produtos from '../../models/Produtos'
+import {Button,Box } from "@material-ui/core"
 import './CaroucelComponent.css'
 
 function CarouselComponent() {
   const [items, setstate] = useState([])
   return (
-
-<Carousel className='pgcarousel'>
+<Box className='pgcarousel'>
+<Carousel >
   <Carousel.Item interval={2000}>
     <img
       className="imgcarousel1"
@@ -31,6 +32,11 @@ function CarouselComponent() {
     />
   </Carousel.Item>
 </Carousel>
+
+
+</Box>
+
+
   )
 }
 

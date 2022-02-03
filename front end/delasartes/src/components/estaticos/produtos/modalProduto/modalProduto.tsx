@@ -11,6 +11,7 @@ import CadastroProduto from '../cadastroProduto/CadastroProduto';
 function getModalStyle() {
   const top = 50 ;
   const left = 50;
+  
 
   return {
     top: `${top}%`,
@@ -46,6 +47,7 @@ function ModalProduto () {
   };
 
   const body = (
+    
     <div style={modalStyle} className={classes.paper}>
       <Box display="flex" justifyContent="flex-end" className="cursor">
         <CloseIcon onClick={handleClose}/>

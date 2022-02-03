@@ -5,6 +5,7 @@ import Produtos from '../../../../models/Produtos';
 import useLocalStorage from 'react-use-localstorage';
 import Categoria from '../../../../models/Categorias';
 import { busca, buscaId, post, put } from '../../../../services/Service';
+import Navbar from '../../navbar/Navbar'
 
 function CadastroProdutos() {
   let history = useHistory();
@@ -107,6 +108,8 @@ function CadastroProdutos() {
   }
 
   return (
+    <>
+    <Navbar/>
     <Container maxWidth="sm" className="topo">
       <form onSubmit={onSubmit}>
         <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro de Produto</Typography>
@@ -138,6 +141,9 @@ function CadastroProdutos() {
         </FormControl>
       </form>
     </Container>
+    
+    </>
+    
   )
 }
 export default CadastroProdutos;

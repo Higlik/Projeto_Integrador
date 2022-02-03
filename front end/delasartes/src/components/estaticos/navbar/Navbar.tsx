@@ -7,6 +7,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import { AppBar, Toolbar, alpha, Box, createStyles, makeStyles, Theme, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import './navbar.css';
+import ModalProduto from "../produtos/modalProduto/ModalProduto";
 
 function Navbar() {
     return (
@@ -53,17 +54,19 @@ function Navbar() {
                     </Box>
                     
                     <Box className="displayicones">
-                        <Link to='/login' className='text-decorator-none'>
+                        <Link to='/cadastroproduto' className='text-decorator-none'>
                             <Box mx={1} className="cursor" >
                                 <Typography variant="h6" className="LgLoginNavBar">
                                     <AddBoxIcon className="tamanhoicones"/>
+                                   
                                 </Typography>
                             </Box>
                         </Link>
-                        <Link to='/login' className='text-decorator-none'>
+                        <Link to='/login'  className='text-decorator-none'>
                             <Box mx={1} className="cursor" >
                                 <Typography variant="h6" className="LgLoginNavBar">
                                     <SearchIcon className="tamanhoicones" />
+                                 
                                 </Typography>
                             </Box>
                         </Link>
