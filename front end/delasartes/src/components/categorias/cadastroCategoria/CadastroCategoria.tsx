@@ -1,10 +1,12 @@
+
 import { Button, Container, TextField, Typography } from "@material-ui/core";
 import React, { ChangeEvent, useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
-import Categorias from '../../../../models/Categorias';
-import { buscaId, post, put } from '../../../../services/Service';
-import './cadastroCategoria.css';
+import Categorias from '../../../models/Categorias';
+import { buscaId, post, put } from '../../../services/Service';
+import './CadastroCategoria.css';
+
 
 
 function CadastroCategoria() {

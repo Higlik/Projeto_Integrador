@@ -2,11 +2,22 @@ import { Box, Card, CardActions, CardContent, Typography } from '@mui/material';
 import React, { ChangeEvent, useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
-import Categorias from '../../../../models/Categorias';
-import Navbar from '../../navbar/Navbar';
-import Produtos from '../../../../models/Produtos';
-import { busca, buscaId } from '../../../../services/Service';
+import Categorias from '../../../models/Categorias';
+import Navbar from '../../estaticos/navbar/Navbar';
+import Produtos from '../../../models/Produto';
+import { busca, buscaId } from '../../../services/Service';
 import './cardProduto.css';
+<<<<<<< HEAD:front end/delasartes/src/components/estaticos/produtos/cardProduto/CardProduto.tsx
+=======
+<<<<<<< HEAD:front end/delasartes/src/components/produtos/cardProduto/CardProduto.tsx
+import User from '../../../models/User';
+=======
+<<<<<<< HEAD
+=======
+import User from '../../../../models/User';
+>>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
+>>>>>>> 175d2a214eed4acdb2f17dfaa68d46898a9d665b:front end/delasartes/src/components/estaticos/produtos/cardProduto/CardProduto.tsx
+>>>>>>> f71d08f4dfbeab4d5e086a45c634f3dfcd211ca6:front end/delasartes/src/components/produtos/cardProduto/CardProduto.tsx
 
 
 
@@ -19,11 +30,7 @@ const CardProduto = () => {
     const [token, setToken] = useLocalStorage('token');
 
     useEffect(() => {
-        if (token == "") {
-            alert("Você precisa estar logado")
-            history.push("/login")
-
-        }
+      
     }, [token])
 
     const [categoria, setCategoria] = useState<Categorias>(

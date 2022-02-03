@@ -8,6 +8,7 @@ import { AppBar, Toolbar, alpha, Box, createStyles, makeStyles, Theme, Typograph
 import { Link } from 'react-router-dom';
 import './navbar.css';
 
+
 function Navbar() {
     return (
         <>
@@ -69,6 +70,7 @@ function Navbar() {
                             </Typography>
                         </Box>
                     </Link>
+<<<<<<< HEAD
                     <Link to='/login' className='text-decorator-none'>
                         <Box mx={1} className="cursor" >
                             <Typography variant="h6" className="LgLoginNavBar">
@@ -92,6 +94,42 @@ function Navbar() {
                     </Link>
                 </Box>
 
+=======
+                    </Box>
+                    
+                    <Box className="displayicones">
+                        <Link to='/cadastroproduto' className='text-decorator-none'>
+                            <Box mx={1} className="cursor" >
+                                <Typography variant="h6" className="LgLoginNavBar">
+                                    <AddBoxIcon className="tamanhoicones"/>
+                                   
+                                </Typography>
+                            </Box>
+                        </Link>
+                        <Link to='/login'  className='text-decorator-none'>
+                            <Box mx={1} className="cursor" >
+                                <Typography variant="h6" className="LgLoginNavBar">
+                                    <SearchIcon className="tamanhoicones" />
+                                 
+                                </Typography>
+                            </Box>
+                        </Link>
+                        <Link to='/login' className='text-decorator-none'>
+                            <Box mx={1} className="cursor" >
+                                <Typography variant="h6" className="LgLoginNavBar">
+                                   <LocalMallIcon className="tamanhoicones" />
+                                </Typography>
+                            </Box>
+                        </Link>
+                        <Link to='/usuario' className='text-decorator-none'>
+                            <Box mx={1} className="cursor" >
+                                <Typography variant="h6" className="LgLoginNavBar">
+                                    <PersonIcon className="tamanhoicones" />
+                                </Typography>
+                            </Box>
+                        </Link>
+                    </Box>
+>>>>>>> f71d08f4dfbeab4d5e086a45c634f3dfcd211ca6
 
 
 
