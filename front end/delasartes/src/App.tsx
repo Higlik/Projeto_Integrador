@@ -16,11 +16,13 @@ import ModalProduto from './components/produtos/modalProduto/ModalProduto';
 import CadastroProdutos from './components/produtos/cadastroProduto/CadastroProduto';
 import DeletaProduto from './components/produtos/deletaProduto/DeletaProduto';
 import PaginaLogin from './paginas/paginaLogin/PaginaLogin';
+import { Provider } from 'react-redux';
+import store from './store/store';
 
 
 function App() {
   return (
-
+    <Provider store={store}>
     <Router>
   
         <Switch>
@@ -79,7 +81,7 @@ function App() {
         </Switch>
       <Footer />
     </Router>
-
+    </Provider>
   );
 }
 

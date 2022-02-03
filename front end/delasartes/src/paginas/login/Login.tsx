@@ -1,14 +1,16 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
 import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
 import { Link, useHistory } from 'react-router-dom';
-import useLocalStorage from 'react-use-localstorage';
 import { login } from '../../services/Service';
 import UserLogin from '../../models/UserLogin';
 import './login.css';
-
+import { useDispatch } from 'react-redux';
+import { addToken } from "../../store/tokens/actions";
 function Login() {
     let history = useHistory();
-    const [token, setToken] = useLocalStorage('token');
+    const dispatch = useDispatch();
+
+    const [token, setToken] = useState('');
     const [userLogin, setUserLogin] = useState<UserLogin>(
         {
             id: 0,
@@ -28,6 +30,7 @@ function Login() {
 
     useEffect(() => {
         if (token != '') {
+            dispatch(addToken(token));
             history.push('/home')
         }
     }, [token])
@@ -44,39 +47,22 @@ function Login() {
     }
 
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center'>
-            <Grid alignItems='center' xs={6}>
-                <Box paddingX={20} className='mg'>
+        
+        <div >
+                <Box paddingX={7} mt={0}>
                     <form onSubmit={onSubmit}>
                         <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='E-mail' variant='outlined' name='usuario' margin='normal' className="textfieldwd" />
                         <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='Senha' variant='outlined' name='senha' margin='normal' type='password' className="textfieldwd" />
                         <Box marginTop={2}>
                             <Button type='submit' variant='contained' className='ButtonBGcolor'>
-                                Entrar
+                                <p>Entrar</p> 
                             </Button>
                         </Box>
                     </form>
 
 
-                    <Box display='flex' justifyContent='center' marginTop={2}>
-                        <Box marginRight={1}>
-                            <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
-                        </Box>
-                        <Link to='/cadastrousuario'>
-                            <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
-                        </Link>
-
-
-
-                    </Box>
-
                 </Box>
-
-            </Grid>
-
-
-
-        </Grid>
+        </div>
     );
 }
 
