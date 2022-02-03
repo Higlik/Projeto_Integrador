@@ -36,6 +36,14 @@ function ListaCategorias() {
     getCategorias()
   }, [categorias.length])
 
+
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    getCategorias()
+
+  }, [categorias.length])
+
   return (
     <>
       <Navbar />
@@ -45,6 +53,7 @@ function ListaCategorias() {
           categorias.map(categorias => (
 
             <Box m={2}>
+              <Link to={`/categorias/${categorias.id}`} className="text-decorator-none">
               <Card className='categoriatm'>
                 <CardMedia
                   className='cursor'
@@ -53,13 +62,12 @@ function ListaCategorias() {
                   height="570"
                   image={categorias.descricao}
                 />
-               
-
               </Card>
+            </Link>
             </Box>
-          ))
+      ))
         }
-      </Box>
+    </Box>
 
 
     </>
@@ -68,3 +76,5 @@ function ListaCategorias() {
 
 
 export default ListaCategorias;
+
+

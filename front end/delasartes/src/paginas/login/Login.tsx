@@ -56,21 +56,6 @@ function Login() {
                                 </Button>
                         </Box>
                     </form>
-<<<<<<< HEAD
-=======
-                  
-                    <Box display='flex' justifyContent='center' marginTop={2}>
-                        <Box marginRight={1}>
-                            <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
-                        </Box>
-                        <Link to='/cadastrousuario'>
-                            <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
-                        </Link>
-
-                        
-                            
-                    </Box>
->>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
                 </Box>
                
             </Grid>

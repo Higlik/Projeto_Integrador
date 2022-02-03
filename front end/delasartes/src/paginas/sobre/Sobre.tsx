@@ -41,7 +41,7 @@ function Sobre() {
 
                         </Card>
                         <Card className='cardbackgroundSobre displaycardSobre'>
-                            <img className='cardmediaSobre' src="" alt="" />
+                            <img className='cardmediaSobre' src="https://i.imgur.com/mNrGs0l.jpg" alt="" />
                             <div className='displaytextSobre fontSobre'>
                                 <Typography  >
                                     <h1></h1>

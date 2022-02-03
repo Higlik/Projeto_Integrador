@@ -11,19 +11,18 @@ import './navbar.css';
 function Navbar() {
     return (
         <>
-            
+
             <div className="displayNavBar backgroundNavBar">
 
                 <Link to='/home' className="text-decoration-none">
                     <Box  >
                         <Typography variant="h5">
-                           <a href="/home"> <h1 className="logoDA" >delasArtes</h1>  </a> 
+                            <a href="/home"> <h1 className="logoDA" >delasArtes</h1>  </a>
                         </Typography>
                     </Box>
                 </Link>
 
                 <Box className="fontnavbar displayitens">
-<<<<<<< HEAD
                     <Link to='./sobre' className="text-decocartor-none">
                         <Box mx={1} className="cursor">
                             <Typography variant="h6" className="FontNavbar">
@@ -40,14 +39,12 @@ function Navbar() {
                         </Box>
                     </Link>
 
-=======
->>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
                     <Link to='/produtos' className='text-decorator-none'>
                         <Box mx={1} className="cursor" >
                             <Typography variant="h6" className="LgLoginNavBar">
                                 <Box className="displayarrow">
-                                <p>Obras</p>
-                                <KeyboardArrowDownIcon className="mgarrow" />
+                                    <p>Obras</p>
+                                    <KeyboardArrowDownIcon className="mgarrow" />
                                 </Box>
                             </Typography>
                         </Box>
@@ -55,56 +52,49 @@ function Navbar() {
                     <Link to='/categorias' className="text-decoration-none">
                         <Box mx={1} className="cursor">
                             <Typography variant="h6" className="FontNavbar">
-                            <Box className="displayarrow">
-                                <p>Categorias</p>
-                                <KeyboardArrowDownIcon className="mgarrow" />
+                                <Box className="displayarrow">
+                                    <p>Categorias</p>
+                                    <KeyboardArrowDownIcon className="mgarrow" />
                                 </Box>
                             </Typography>
                         </Box>
                     </Link>
-                    <Link to='/sobre' className="text-decocartor-none">
-                        <Box mx={1} className="cursor">
-                            <Typography variant="h6" className="FontNavbar">
-                                <p>Sobre</p>
+                </Box>
+
+                <Box className="displayicones">
+                    <Link to='/login' className='text-decorator-none'>
+                        <Box mx={1} className="cursor" >
+                            <Typography variant="h6" className="LgLoginNavBar">
+                                <AddBoxIcon className="tamanhoicones" />
                             </Typography>
                         </Box>
                     </Link>
-                    </Box>
-                    
-                    <Box className="displayicones">
-                        <Link to='/login' className='text-decorator-none'>
-                            <Box mx={1} className="cursor" >
-                                <Typography variant="h6" className="LgLoginNavBar">
-                                    <AddBoxIcon className="tamanhoicones"/>
-                                </Typography>
-                            </Box>
-                        </Link>
-                        <Link to='/login' className='text-decorator-none'>
-                            <Box mx={1} className="cursor" >
-                                <Typography variant="h6" className="LgLoginNavBar">
-                                    <SearchIcon className="tamanhoicones" />
-                                </Typography>
-                            </Box>
-                        </Link>
-                        <Link to='/login' className='text-decorator-none'>
-                            <Box mx={1} className="cursor" >
-                                <Typography variant="h6" className="LgLoginNavBar">
-                                   <LocalMallIcon className="tamanhoicones" />
-                                </Typography>
-                            </Box>
-                        </Link>
-                        <Link to='/usuario' className='text-decorator-none'>
-                            <Box mx={1} className="cursor" >
-                                <Typography variant="h6" className="LgLoginNavBar">
-                                    <PersonIcon className="tamanhoicones" />
-                                </Typography>
-                            </Box>
-                        </Link>
-                    </Box>
+                    <Link to='/login' className='text-decorator-none'>
+                        <Box mx={1} className="cursor" >
+                            <Typography variant="h6" className="LgLoginNavBar">
+                                <SearchIcon className="tamanhoicones" />
+                            </Typography>
+                        </Box>
+                    </Link>
+                    <Link to='/login' className='text-decorator-none'>
+                        <Box mx={1} className="cursor" >
+                            <Typography variant="h6" className="LgLoginNavBar">
+                                <LocalMallIcon className="tamanhoicones" />
+                            </Typography>
+                        </Box>
+                    </Link>
+                    <Link to='/usuario' className='text-decorator-none'>
+                        <Box mx={1} className="cursor" >
+                            <Typography variant="h6" className="LgLoginNavBar">
+                                <PersonIcon className="tamanhoicones" />
+                            </Typography>
+                        </Box>
+                    </Link>
+                </Box>
 
 
 
-               
+
             </div>
         </>
     )

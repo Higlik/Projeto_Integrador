@@ -7,10 +7,6 @@ import Navbar from '../../navbar/Navbar';
 import Produtos from '../../../../models/Produtos';
 import { busca, buscaId } from '../../../../services/Service';
 import './cardProduto.css';
-<<<<<<< HEAD
-=======
-import User from '../../../../models/User';
->>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
 
 
 
@@ -21,10 +17,6 @@ const CardProduto = () => {
     const { id } = useParams<{ id: string }>();
     const [categorias, setCategorias] = useState<Categorias[]>([]);
     const [token, setToken] = useLocalStorage('token');
-<<<<<<< HEAD
-=======
-    const [usuario, setUsuario] = useState<User[]>([]);
->>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
 
     useEffect(() => {
         if (token == "") {
@@ -40,16 +32,6 @@ const CardProduto = () => {
             genero: '',
             descricao: ''
         })
-<<<<<<< HEAD
-=======
-    const [user, setUser] = useState<User>(
-        {
-            id: 0,
-            nome: '',
-            usuario: '',
-            senha: ''
-        })
->>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
 
     const [produto, setProduto] = useState<Produtos>({
         id: 0,
@@ -62,17 +44,9 @@ const CardProduto = () => {
     })
 
     useEffect(() => {
-<<<<<<< HEAD
         setProduto({
             ...produto,
             categoria: categoria
-=======
-        window.scrollTo(0,0)
-        setProduto({
-            ...produto,
-            categoria: categoria,
-            user: user
->>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
         })
     }, [categoria])
 
@@ -84,19 +58,7 @@ const CardProduto = () => {
     }, [id])
 
     async function getCategorias() {
-<<<<<<< HEAD
         await busca("/categorias", setCategorias, {
-=======
-        await busca(`/categorias`, setCategorias, {
-            headers: {
-                'Authorization': token
-            }
-        })
-    }
-
-    async function getUsuario() {
-        await busca(`usuarios`, setCategorias, {
->>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
             headers: {
                 'Authorization': token
             }
@@ -116,21 +78,10 @@ const CardProduto = () => {
         setProduto({
             ...produto,
             [e.target.name]: e.target.value,
-<<<<<<< HEAD
             categoria: categoria
         })
 
     }
-=======
-            categoria: categoria,
-            user: user
-
-        })
-
-    }
-    
-
->>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
 
 
     return (
@@ -139,7 +90,6 @@ const CardProduto = () => {
             <Box className='pgcard-top'>
                 <Card className='displaycardprod'>
                     <h1 className='titulocard'>{produto.nome}</h1>
-<<<<<<< HEAD
                     <div><img className='Imgcardprod' src={produto.foto} alt="Imagem Produto" /></div>
                     <div className='displaytextcard'>
                         <h2 className='titulo2card'>Descrição/Acabamento</h2>
@@ -150,20 +100,6 @@ const CardProduto = () => {
                         <button className='botaocard'>Comprar</button>
                         <p className='textcard'>Parcele em até 10x</p>   
                         
-=======
-                    <div className='display2cardprod'>
-                        <div><img className='Imgcardprod' src={produto.foto} alt="Imagem Produto" /></div>
-                        <div className='displaytextcard'>
-                            <h2 className='titulo2card'>Descrição/Acabamento</h2>
-                            <p className='textcard'>{produto.descricao}</p>
-                            <div className='bordercard'></div>
-                            <p className='textcard'>By {produto.user?.nome}</p>
-                            <p className='precocard'> R&#36; {produto.valor.toFixed(2)}</p>
-                            <button className='botaocard'>Comprar</button>
-                            <p className='textcard'>Parcele em até 10x</p>
-
-                        </div>
->>>>>>> 32d783894370cab4503d10ef55239ec0377c6314
                     </div>
 
                 </Card>

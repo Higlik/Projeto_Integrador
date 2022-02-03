@@ -8,23 +8,23 @@ import { Box, Card, CardActionArea, CardContent, CardMedia, Typography } from '@
 import './TelaProduto.css'
 
 const TelaProduto = () => {
-  return (
-    <div className='dist_'>
-            <Link  to='/produto/6' className='text-decoration-none'>
-            <img className='zoom img-relative' src="https://imgur.com/uWnupVN.png" alt="Produto 1" /> 
-                   
-            </Link>
-            <Link  to='/produto/7' className='text-decoration-none'>
-                    <img className='zoom img-relative' src="https://imgur.com/72VcnPy.png" alt="Produto 2" />
-            
-            </Link>
+        return (
+                <div className='dist_'>
+                        <Link to='/produto/6' className='text-decoration-none'>
+                                <img className='zoom img-relative' src="https://imgur.com/uWnupVN.png" alt="Produto 1" />
 
-            <Link  to='/produto/8' className='text-decoration-none'>
-                    <img className='zoom img-relative' src="https://imgur.com/2XbgVHh.png" alt="Produto 3" />
-                    
-            </Link>
-    </div>
-  )
+                        </Link>
+                        <Link to='/produto/7' className='text-decoration-none'>
+                                <img className='zoom img-relative' src="https://imgur.com/72VcnPy.png" alt="Produto 2" />
+
+                        </Link>
+
+                        <Link to='/produto/8' className='text-decoration-none'>
+                                <img className='zoom img-relative' src="https://imgur.com/2XbgVHh.png" alt="Produto 3" />
+
+                        </Link>
+                </div>
+        )
 }
 
 export default TelaProduto;

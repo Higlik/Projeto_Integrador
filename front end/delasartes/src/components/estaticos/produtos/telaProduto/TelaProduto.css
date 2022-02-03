@@ -38,16 +38,15 @@
 
 .zoom {
     transition: transform .2s; 
-  }
+}
 
-  .zoom:hover {
+.zoom:hover {
     transform:  translate(3%, -3%) scale(1.1);
     position:inherit
-  }
+}
 
-  .bottom-lef{
+.bottom-lef{
     position: absolute;
     bottom: 8px;
     left: 16px;
-  }
-  
+}
