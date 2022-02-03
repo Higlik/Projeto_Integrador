@@ -9,11 +9,11 @@ import './footer.css'
 function Footer() {
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center">
-                <Grid alignItems="center" item xs={12}>
-                    <Box >
-                        <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
-                            <Typography variant="h5" align="center" gutterBottom className='text'>Siga-nos nas redes sociais </Typography>
+            <Grid className='box1' container direction="row" justifyContent="center" alignItems="center">
+                <Grid container alignItems="center" item xs={4}>
+                    <Box>
+                    <Box paddingTop={1} display="flex" alignItems="center" justifyContent="center">
+                            <Typography variant="h5" align="center" gutterBottom className='colorlogo'>delasArtes</Typography>
                         </Box>
                         <Box display="flex" alignItems="center" justifyContent="center">
                             <a href="https://www.facebook.com/generationbrasil" target="_blank">
@@ -22,15 +22,6 @@ function Footer() {
                             <a href="https://www.instagram.com/generationbrasil/" target="_blank">
                                 <InstagramIcon className='redes' />
                             </a>
-                        </Box>
-                    
-                    
-                        <Box paddingTop={1}>
-                            <Typography variant="subtitle2" align="center" gutterBottom className='text' >© 2022 Copyright:</Typography>
-                        </Box>
-                        <Box>
-                                <Typography variant="subtitle2" gutterBottom className='text' align="center">delasArtes</Typography>
-                            
                         </Box>
                     </Box>
                 </Grid>
