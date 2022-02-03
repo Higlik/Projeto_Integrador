@@ -3,6 +3,7 @@ import './home.css';
 import Navbar from '../../components/estaticos/navbar/Navbar'
 import CaroucelComponent from '../../components/caroucelComponent/CaroucelComponent';
 import { Link } from 'react-router-dom';
+
 const Home = () => {
   return <div>
    

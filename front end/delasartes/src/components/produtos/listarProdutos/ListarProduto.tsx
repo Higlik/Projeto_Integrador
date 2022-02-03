@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import { busca } from '../../../../services/Service';
+import { busca } from '../../../services/Service';
 import { Box, Card, CardActions, CardContent, Button, Typography } from '@material-ui/core';
 import useLocalStorage from 'react-use-localstorage';
 import { useHistory } from 'react-router-dom'
-import Produtos from '../../../../models/Produtos';
-import Navbar from '../../navbar/Navbar';
+import Produto from '../../../models/Produto';
+import Navbar from '../../estaticos/navbar/Navbar';
 import { CardActionArea } from '@mui/material';
 import CardMedia from '@mui/material/CardMedia';
-import './listarProdutos.css';
+import './ListarProduto.css';
 
 
-function ListarProdutos() {
-  const [prodts, setProdts] = useState<Produtos[]>([])
+
+function ListarProduto() {
+  const [prod, setProdts] = useState<Produto[]>([])
   const [token, setToken] = useLocalStorage('token');
   let history = useHistory();
 
@@ -36,7 +37,7 @@ function ListarProdutos() {
     window.scrollTo(0,0)
     getPost()
 
-  }, [prodts.length])
+  }, [prod.length])
 
   return (
     <>
@@ -44,7 +45,7 @@ function ListarProdutos() {
       <h1 className='prodtitulo'>OBRAS</h1>
       <Box className='display'>
         {
-          prodts.map(post => (
+          prod.map(post => (
             
             <Box m={2} >
               <Link to={`/produto/${post.id}`} className="text-decorator-none">
@@ -78,4 +79,4 @@ function ListarProdutos() {
   )
 }
 
-export default ListarProdutos;
+export default ListarProduto;

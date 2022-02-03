@@ -1,7 +1,7 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 import { useState } from 'react'
-import Produtos from '../../models/Produtos'
+import Produtos from '../../models/Produto'
 import {Button,Box } from "@material-ui/core"
 import './CaroucelComponent.css'
 

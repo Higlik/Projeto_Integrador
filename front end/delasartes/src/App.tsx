@@ -7,13 +7,15 @@ import Home from './paginas/home/Home';
 import Login from './paginas/login/Login';
 import './App.css';
 import Usuario from './paginas/usuario/Usuario';
-import ListarCategorias from './components/estaticos/categorias/listarCategorias/ListarCategorias';
-import ListarProdutos from './components/estaticos/produtos/listarProdutos/ListarProdutos';
-import CardProduto from './components/estaticos/produtos/cardProduto/CardProduto';
+import ListarCategorias from './components/categorias/listarCategorias/ListarCategorias';
+import ListarProdutos from './components/produtos/listarProdutos/ListarProduto';
+import CardProduto from './components/produtos/cardProduto/CardProduto';
 import Sobre from './paginas/sobre/Sobre';
 import Contato from './paginas/contato/Contato';
-import ModalProduto from './components/estaticos/produtos/modalProduto/ModalProduto';
-import CadastroProdutos from './components/estaticos/produtos/cadastroProduto/CadastroProduto';
+import ModalProduto from './components/produtos/modalProduto/ModalProduto';
+import CadastroProdutos from './components/produtos/cadastroProduto/CadastroProduto';
+import DeletaProduto from './components/produtos/deletaProduto/DeletaProduto';
+
 
 
 function App() {
@@ -49,9 +51,11 @@ function App() {
               <ListarCategorias />
             </Route>
 
+
             <Route path='/produtos'>
               <ListarProdutos />
-            </Route>
+              </Route>
+
 
             <Route path='/produto/:id'>
             <CardProduto />
@@ -67,6 +71,10 @@ function App() {
 
             <Route path='/cadastroproduto'>
             <CadastroProdutos />
+            </Route>
+
+            <Route path='/deletarPostagem/:id'>
+            <DeletaProduto />
             </Route>
 
           </div>

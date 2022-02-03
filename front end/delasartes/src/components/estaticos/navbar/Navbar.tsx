@@ -7,7 +7,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import { AppBar, Toolbar, alpha, Box, createStyles, makeStyles, Theme, Typography } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import './navbar.css';
-import ModalProduto from "../produtos/modalProduto/ModalProduto";
+
 
 function Navbar() {
     return (

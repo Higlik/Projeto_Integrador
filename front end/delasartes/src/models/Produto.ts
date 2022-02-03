@@ -1,5 +1,4 @@
 import Categorias from './Categorias'
-
 import User from'./User'
 
 interface Produtos {

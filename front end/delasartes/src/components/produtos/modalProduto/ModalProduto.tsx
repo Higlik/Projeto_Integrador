@@ -8,6 +8,7 @@ import './ModalProduto.css';
 import CadastroProduto from '../cadastroProduto/CadastroProduto';
 
 
+
 function getModalStyle() {
   const top = 50 ;
   const left = 50;

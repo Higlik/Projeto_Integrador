@@ -2,12 +2,12 @@ import { Box, Card, CardActions, CardContent, Typography } from '@mui/material';
 import React, { ChangeEvent, useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
-import Categorias from '../../../../models/Categorias';
-import Navbar from '../../navbar/Navbar';
-import Produtos from '../../../../models/Produtos';
-import { busca, buscaId } from '../../../../services/Service';
+import Categorias from '../../../models/Categorias';
+import Navbar from '../../estaticos/navbar/Navbar';
+import Produtos from '../../../models/Produto';
+import { busca, buscaId } from '../../../services/Service';
 import './cardProduto.css';
-import User from '../../../../models/User';
+import User from '../../../models/User';
 
 
 
