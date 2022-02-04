@@ -102,7 +102,7 @@ color: #FFFFFF;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: center;  
     gap: 20px;
     padding-left: 2.5rem;
     padding-top: 8px;
