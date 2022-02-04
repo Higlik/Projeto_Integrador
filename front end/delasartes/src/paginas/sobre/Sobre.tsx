@@ -61,7 +61,7 @@ function Sobre() {
                         <div>
                             <h1>Pedro Jones</h1>
                             <p>Dev Full Stack</p>
-                            <h2>Próximo de se graduar em um curso superior de filosofia, me econtro atualmente em transição de carreira para atuar como desenvolvedor. Tendo-me capacitado através do curso da Generation Brasil, tenho o que é preciso para engressar nessa nova carreira.</h2>
+                            <h2></h2>
                         </div>
                         <div className='iconessobre'>
                             <a href="https://www.linkedin.com/in/pedro-jones-b7b7351a4/" target='_blank'><img src="https://imgur.com/Ky865S6.png" alt="" /></a>

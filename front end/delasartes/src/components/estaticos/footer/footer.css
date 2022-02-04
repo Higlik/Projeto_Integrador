@@ -16,6 +16,7 @@
     font-size: 25px !important;
     display:flex;
     justify-content:flex-start;
+    font-weight: 700 !important;
 }
 
 .colorlogo{
@@ -24,11 +25,11 @@
     font-size: 50px !important;
 }
 
-.textfooter{
+.textfooter h6{
     color:black;
     font-family: var(--poppins) !important;
     font-weight: 700 !important;
-    font-size:13px;
+    font-size:15px;
 }
 
 .displayfooter{
