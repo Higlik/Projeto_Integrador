@@ -1,5 +1,7 @@
-import React from "react";
-
+import React, { useEffect } from "react";
+import { useSelector } from 'react-redux';
+import { TokenState } from '../../../store/tokens/tokensReducer';
+import { useHistory, useParams } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
@@ -11,6 +13,8 @@ import ModalProduto from "../../produtos/modalProduto/ModalProduto";
 
 
 function Navbar() {
+
+
     return (
         <>
             

@@ -21,8 +21,10 @@ import store from './store/store';
 
 
 function App() {
+  
   return (
-    <Provider store={store}>
+    
+      
     <Router>
   
         <Switch>
@@ -71,8 +73,6 @@ function App() {
             <Contato />
             </Route>
 
-
-         
             <Route path='/deletarPostagem/:id'>
             <DeletaProduto />
             </Route>
@@ -81,7 +81,8 @@ function App() {
         </Switch>
       <Footer />
     </Router>
-    </Provider>
+   
+  
   );
 }
 

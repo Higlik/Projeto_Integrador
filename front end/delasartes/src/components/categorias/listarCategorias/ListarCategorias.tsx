@@ -23,6 +23,7 @@ function ListaCategorias() {
 
 
   useEffect(() => {
+    window.scrollTo(0, 0)
     getCategorias()
   }, [categorias.length])
 

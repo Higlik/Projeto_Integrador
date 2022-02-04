@@ -1,0 +1,38 @@
+.Mapa{
+    width: 550px;
+    height: 450px;
+}
+
+.textfielContato{
+    width: 500px;
+    height: 50px;
+}
+
+.PgContato{
+    margin-top: 3rem;
+}
+
+.ContatoMPcolor{
+    color: white;
+}
+
+.MarginContato{
+    padding-left: 130px;
+}
+
+.ButtonEnviarText{
+    font-family: var(--bebas-neue);
+    color: white;
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+.ButtonContatoBGcolor{
+    background-color: black !important;
+    width: 112px;
+    height: 48px;
+}
+
+.TextfieldContatoBG{
+  -webkit-text-fill-color: white;
+}
