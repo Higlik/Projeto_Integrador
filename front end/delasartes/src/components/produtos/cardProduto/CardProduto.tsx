@@ -85,7 +85,7 @@ const CardProduto = () => {
                         <h2 className='titulo2card'>Descricao/Acabamento</h2>
                         <p className='textcard'>{produto.descricao}</p>
                         <div className='bordercard'></div>
-                        <p className='textcard'>By Pablo Vittar</p>
+                        <p className='textcard'>By Claudia Miranda</p>
                         <p className='preco'> R&#36; {produto.valor.toFixed(2)}</p>
                         <p className='textcard'> Quantidade Disponível: {produto.quantidade}</p>
                         <button className='botaocard'>Comprar</button>
