@@ -47,7 +47,7 @@ function Sobre() {
                             <p>Dev Full Stack</p>
                             <h2>Desenvolvedor FullStack Jr com grande curiosidade em tudo que envolve tecnologia, com maior interesse em Análise de Dados e Big Data, disposto a aprender e encarar novos desafios.</h2>
                         </div>
-                        <div className='iconessobre'>
+                        <div className='iconessobre iconessobregui'>
                             <a href="https://www.linkedin.com/in/guilherme-rivas/" target='_blank'><img src="https://imgur.com/Ky865S6.png" alt="" /></a>
                             <a href="https://github.com/GuilhermeRivas" target='_blank'><img src="https://imgur.com/9hssxc3.png" alt="" /></a>
                         </div>
@@ -59,9 +59,9 @@ function Sobre() {
                     <img className='cardmediaSobre' src="https://imgur.com/tS5reAO.png" alt="" />
                     <div className='displaytextSobre devteamtext pgrightp'>
                         <div>
-                            <h1>JEDRO PONES</h1>
+                            <h1>PEDRO JONES</h1>
                             <p>Dev Full Stack</p>
-                            <h2></h2>
+                            <h2>Próximo de se graduar em um curso superior de filosofia, me econtro atualmente em transição de carreira para atuar como desenvolvedor. Tendo-me capacitado através do curso da Generation Brasil, tenho o que é preciso para engressar nessa nova carreira.</h2>
                         </div>
                         <div className='iconessobre'>
                             <a href="https://www.linkedin.com/in/pedro-jones-b7b7351a4/" target='_blank'><img src="https://imgur.com/Ky865S6.png" alt="" /></a>
