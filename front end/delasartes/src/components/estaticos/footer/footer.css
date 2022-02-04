@@ -63,3 +63,9 @@
     padding:10px;
 
 }
+
+.borderfooter{
+    border: 1px solid #1B1B1B;
+    margin-top: 16rem;
+    width: 100%;
+}

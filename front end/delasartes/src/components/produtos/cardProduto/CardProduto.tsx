@@ -82,7 +82,6 @@ const CardProduto = () => {
             <Box className='pgcard-top'>
                 <Card className='displaycardprod'>
                     <h1 className='titulocard'>{produto.nome}</h1>
-<<<<<<< HEAD
                     <Box className='display2cardprod'>
                         <div><img className='Imgcardprod' src={produto.foto} alt="Imagem Produto" /></div>
                         <div className='displaytextcard'>
@@ -97,23 +96,6 @@ const CardProduto = () => {
                         </div>
                     </Box>
 
-=======
-                   <Box className='display2cardprod'>
-                   <div><img className='Imgcardprod' src={produto.foto} alt="Imagem Produto" /></div>
-                    <div className='displaytextcard'>
-                        <h2 className='titulo2card'>Descricao/Acabamento</h2>
-                        <p className='textcard'>{produto.descricao}</p>
-                        <div className='bordercard'></div>
-                        <p className='textcard'>By Claudia Miranda</p>
-                        <p className='preco'> R&#36; {produto.valor.toFixed(2)}</p>
-                        <p className='textcard'> Quantidade Disponível: {produto.quantidade}</p>
-                        <button className='botaocard'>Comprar</button>
-                        <p className='textcard'>Parcele em até 10x</p>   
-                        
-                    </div>
-                   </Box>
-                   
->>>>>>> c2bc04e99066d6a1554609316f30d1b4483398da
 
                 </Card>
 

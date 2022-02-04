@@ -115,15 +115,17 @@ function CadastroProduto() {
     <>
       <Container className='modalbackground'>
         <form onSubmit={onSubmit}>
-          <h1 >Formulário de cadastro de Produto</h1>
-          <TextField className='textfieldbackground' value={produto.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="nome" label="nome" variant="outlined" name="nome" margin="normal" fullWidth />
-          <TextField className='textfieldbackground' value={produto.valor} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="valor" label="valor" name="valor" variant="outlined" margin="normal" fullWidth />
-          <TextField className='textfieldbackground' value={produto.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="descricao" label="descricao" name="descricao" variant="outlined" margin="normal" fullWidth />
-          <TextField className='textfieldbackground' value={produto.quantidade} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="quantidade" label="quantidade" name="quantidade" variant="outlined" margin="normal" fullWidth />
-          <TextField className='textfieldbackground' value={produto.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="foto" label="foto" name="foto" variant="outlined" margin="normal" fullWidth />
+          <div className='displayformulario'>
+          <h1 className='formularioTitulo'>Cadastrar Produto</h1>
+          <TextField className='textfieldbackground' value={produto.nome} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="nome" label="Nome" variant="outlined" name="nome" margin="normal" fullWidth />
+          <TextField className='textfieldbackground' value={produto.valor} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="valor" label="Valor" name="valor" variant="outlined" margin="normal" fullWidth />
+          <TextField className='textfieldbackground' value={produto.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="descricao" label="Descrição" name="descricao" variant="outlined" margin="normal" fullWidth />
+          <TextField className='textfieldbackground' value={produto.quantidade} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="quantidade" label="Quantidade" name="quantidade" variant="outlined" margin="normal" fullWidth />
+          <TextField className='textfieldbackground' value={produto.foto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedProdutos(e)} id="foto" label="Foto" name="foto" variant="outlined" margin="normal" fullWidth />
           <FormControl >
-            <InputLabel id="demo-simple-select-helper-label">Categoria </InputLabel>
+            <InputLabel id="demo-simple-select-helper-label" className='inputdisplay'>Categoria </InputLabel>
             <Select
+              className='selectdisplay'
               labelId="demo-simple-select-helper-label"
               id="demo-simple-select-helper"
               onChange={(e) => buscaId(`/categorias/${e.target.value}`, setCategoria, {
@@ -137,11 +139,13 @@ function CadastroProduto() {
                 ))
               }
             </Select>
-            <FormHelperText>Escolha uma categoria para o seu produto</FormHelperText>
-            <Button type="submit" variant="contained" color="primary">
-              Finalizar
+            <Button type="submit" variant="contained" className='colorbuttonformulario'>
+              Enviar
             </Button>
           </FormControl>
+
+          </div>
+  
         </form>
       </Container >
 

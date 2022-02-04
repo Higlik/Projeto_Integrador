@@ -9,14 +9,14 @@ function CarouselComponent() {
   return (
 <Box className='pgcarousel'>
 <Carousel >
-  <Carousel.Item interval={2000}>
+  <Carousel.Item interval={1000}>
     <img
       className="imgcarousel1"
       src="https://imgur.com/R1kPPuc.png"
       alt="First slide"
     />
   </Carousel.Item>
-  <Carousel.Item interval={2000}>
+  <Carousel.Item interval={1000}>
     <img
       className="imgcarousel2"
       src="https://imgur.com/7Z3jzqu.png"

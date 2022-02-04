@@ -2,12 +2,47 @@
     display: flex;
     flex-direction: column;
     background-color: #1F1F1F;
-    width: 786px;
-    height: 898px;
+    width: 500px !important;
+    height: 675px;
+ 
 }
+.inputdisplay{
+    color: white !important;
+    margin-top: 7px;
+}
+
+.selectdisplay{
+    background-color:rgba(107, 54, 207, 0.3);
+    height: 50px !important;
+}
+
 
 .textfieldbackground{
     background-color:rgba(107, 54, 207, 0.3);
-    width: 464px !important;
+    -webkit-text-fill-color: white;
+    width: 100% !important;
     height: 59px !important;
+}
+
+.formularioTitulo{
+    font-family: var(--poppins);
+    font-weight: 700;
+    padding-top: 2rem;
+    color: white;
+}
+
+.displayformulario{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0rem;
+}
+
+.colorbuttonformulario{
+    width: 300px;
+    margin-top: 20px !important;
+    margin-left: 75px !important;
+    background-color: #6031BA !important;
+    color: white !important;
+    font-family: var(--bebas-neue) !important;
+    font-size: 23px !important;
 }
