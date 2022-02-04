@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CadastroUsuario from "../cadastroUsuario/CadastroUsuario";
 import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
 import Navbar from "../../components/estaticos/navbar/Navbar";
@@ -7,10 +7,10 @@ import './Contato.css';
 
 
 function Contato() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
     
-
-
-
+    }, [])
     return (
 
         <>
