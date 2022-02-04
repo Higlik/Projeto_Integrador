@@ -8,8 +8,6 @@ import Navbar from "../../components/estaticos/navbar/Navbar";
 import './PaginaLogin.css';
 
 
-
-
 function PaginaLogin() {
     return (
 
@@ -22,11 +20,11 @@ function PaginaLogin() {
 
                 <Grid container xs={12}   >
                     <Grid xs={6}>
-                    <h1 className="fontTitulo"> Já sou cadastrade </h1> 
+                    <h1 className="fontpage"> Já sou cadastrade </h1> 
                     </Grid>
                   
                     <Grid xs={6}>
-                    <h1 className="fontTitulo "> Criar uma conta </h1>
+                    <h1 className="fontpage "> Criar uma conta </h1>
                     </Grid>
                 </Grid>
                 <Grid container direction='row' className="PgLogin"> 

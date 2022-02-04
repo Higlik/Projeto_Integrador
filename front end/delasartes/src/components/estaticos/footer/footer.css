@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 .box1{
     margin-top: 20rem;
@@ -12,10 +12,54 @@
 
 .text{
     color: black;
+    font-family: var(--poppins) !important;
+    font-size: 25px !important;
+    display:flex;
+    justify-content:flex-start;
 }
 
 .colorlogo{
     color:#6B36CF;
     font-family: var(--font-family) !important;
-    font-size: 60px !important;
+    font-size: 50px !important;
+}
+
+.textfooter{
+    color:black;
+    font-family: var(--poppins) !important;
+    font-weight: 700 !important;
+    font-size:13px;
+}
+
+.displayfooter{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+}
+
+.linefooter{
+    width: 1371px;
+    border: 1px solid #1B1B1B;
+}
+
+.endfooter{
+    display:flex;
+    justify-content:flex-end;
+    margin-right:50px;
+    align-items:center;
+}
+
+.startfooter{
+    display:flex;
+    justify-content:flex-start;
+    margin-left:50px;
+    align-items:center;
+}
+
+.payimg{
+    width:60px;
+    flex-direction:column;
+    display:flex;
+    padding:10px;
+
 }
