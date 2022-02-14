@@ -27,8 +27,8 @@
   <div style="display: inline_block">
    <img align="center" alt="Pedro-Figma" height="30" width="40"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
     <img align="center" alt="Pedro-VsStudio" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" />
-      <img align="center" alt="Pedro-Github" height="30" width="40"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
-       <img align="center" alt="Pedro-Postman" height="30" width="40"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+    <img align="center" alt="Pedro-Github" height="30" width="40"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+
    </div>
    <br>
 
