@@ -29,3 +29,14 @@
     <img align="center" alt="Pedro-VsStudio" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" />
       <img align="center" alt="Pedro-VsStudio" height="30" width="40"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
    </div>
+   <br>
+
+<details>
+ 
+   
+ 
+</details>
+   <br>
+  <div style="display: inline_block">
+       <img align="center" alt="Pedro-Figma" height="3000" width="40000"  src="https://i.imgur.com/8XINHQw.png" />
+   </div>
