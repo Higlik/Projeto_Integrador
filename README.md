@@ -27,7 +27,8 @@
   <div style="display: inline_block">
    <img align="center" alt="Pedro-Figma" height="30" width="40"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
     <img align="center" alt="Pedro-VsStudio" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain.svg" />
-      <img align="center" alt="Pedro-VsStudio" height="30" width="40"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+      <img align="center" alt="Pedro-Github" height="30" width="40"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+       <img align="center" alt="Pedro-Postman" height="30" width="40"  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
    </div>
    <br>
 
@@ -41,25 +42,25 @@
   <table align="center">
   <tr>
     <td align="center">
-    <img  src="https://i.imgur.com/8XINHQw.jpg" style="width: 100px; border-radius: 5%">
-    <h4><b>Agatha </b></h4>
-      <a href="https://www.linkedin.com/in/gthlbrc/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-      <a href="https://github.com/alyen404" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
+    <img  src="https://i.imgur.com/8XINHQw.jpg" style="width: 100px; height: 100px; border-radius: 5%">
+    <h4><b>Giulia Galbiati </b></h4>
+      <a href="https://www.linkedin.com/in/giulia-galbiati-544bab1b1/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+      <a href="https://github.com/giugalbiati" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
     <td align="center">
-    <img  src="https://i.imgur.com/HjVEvo7.jpg" style="width: 100px; border-radius: 5%">
-    <h4><b>Isaias Rodrigues</b></h4>
-      <a href="https://www.linkedin.com/in/isaiasz/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-      <a href="https://github.com/isaiaszanoni" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
+    <img  src="https://i.imgur.com/HjVEvo7.jpg" style="width: 100px; height: 100px;  border-radius: 5%">
+    <h4><b>Guilherme Rivas</b></h4>
+      <a href="https://www.linkedin.com/in/guilherme-rivas/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+      <a href="https://github.com/GuilhermeRivas" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
     <td align="center">
-    <img  src="https://imgur.com/tS5reAO.jpg" style="width: 100px; border-radius: 5%">
-       <h4><b>Jaqueline Ferreira</b></h4>
-      <a href="https://www.linkedin.com/in/jaqueline-ferreira-484403210/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-      <a href="https://github.com/Jaqueline-Ferreira" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
+    <img  src="https://imgur.com/tS5reAO.jpg" style="width: 100px; height: 100px; border-radius: 5%">
+       <h4><b>Pedro Jones</b></h4>
+      <a href="https://www.linkedin.com/in/pedro-jones-b7b7351a4/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+      <a href="https://github.com/PedroJones" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
    <td align="center">
-    <img  src="https://i.imgur.com/1raX63n.jpg" style="width: 100px; border-radius: 5%">
-    <h4><b>Mayara bueno</b></h4>
-     <a href="https://www.linkedin.com/in/mayara-s-bueno/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
-      <a href="https://github.com/mayaralbueno" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
+    <img  src="https://i.imgur.com/1raX63n.jpg" style="width: 100px; height: 100px; border-radius: 5%">
+    <h4><b>Victor França</b></h4>
+     <a href="https://www.linkedin.com/in/victor-fran%C3%A7a-5833b5224/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
+      <a href="https://github.com/Higlik" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
 
 
   </tr>
