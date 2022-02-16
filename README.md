@@ -33,8 +33,8 @@
    <br>
 
 <details> <br>
- <p>Somos uma instituição com intuito de auxiliar mulheres artistas, inclusas nas classes baixas da sociedade, a promover seu trabalho no nosso Marketplace, enaltecendo a     igualdade de gênero com lucros justos e oportunidades de crescimento no ramo artístico. Todas as artistas podem utilizar a plataforma para divulgar suas obras e qualquer 
-pessoa pode adquiri-las.</p>
+ <p>A invisibilidade feminina no meio artístico é crítica. Comparadas à extensa lista de nomes masculinos na produção de obras no Renascimento, por exemplo, as mulheres citadas como artistas foram poucas, e geralmente foram postas como coadjuvantes em seu papel e desenvolvimento para o mundo das artes.</p>
+ <p>Conforme a desigualdade de gênero, optamos por desenvolver uma plataforma com objetivo de proporcionar a mulheres artistas, especificamente as de minorias sociais/classes baixas, a oportunidade de vender seus produtos mundialmente com lucros justos e alta visibilidade.</p>
    
  
 </details>
